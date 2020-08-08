@@ -1,0 +1,425 @@
+
+
+
+SPAN ALL LEDGERS                              Neraca Lajur - Detail Segmen Tambahan               Tanggal Laporan: 19-JUL-2020 19:04
+                                                    Year to date pada JUN-20                              Halaman:     1 dari      7
+
+                 Mata Uang:  IDR
+                      Tipe:  Total
+              Kisaran KPPN:  156 sampai 156
+
+
+                Buku Besar:  SPAN Accrual Ledger
+                      KPPN:  156 KOLAKA
+
+
+BANK                    AKUN                  Deskripsi AKUN                        Saldo Awal  Aktivitas Periode        Saldo Akhir
+----------------------- --------------------- ----------------------------- ------------------ ------------------ ------------------
+00000                   111511                Kas dalam Transito - BUN       (338.376.084.558)                 0   (338.376.084.558)
+                        111611                Kas di Bendahara Pengeluaran       (230.770.301)     2.455.583.850      2.224.813.549
+                        111613                Kas di Bendahara Pengeluaran        614.234.763        662.539.800      1.276.774.563
+                        131111                Tanah                             2.204.742.000                  0      2.204.742.000
+                        132111                Peralatan dan Mesin              93.602.155.725      2.274.411.350     95.876.567.075
+                        133111                Gedung dan Bangunan             202.164.022.344     13.007.538.076    215.171.560.420
+                        134111                Jalan dan Jembatan              111.046.882.353        106.902.994    111.153.785.347
+                        134112                Irigasi                           7.744.080.000                  0      7.744.080.000
+                        134113                Jaringan                         72.999.136.450                  0     72.999.136.450
+                        135121                Aset Tetap Lainnya                9.709.137.017        167.863.000      9.877.000.017
+                        212112                Belanja barang yang masih har                 0         (5.540.000)        (5.540.000)
+                        212191                Utang kepada Pihak Ketiga Lai     8.823.793.561        276.352.526      9.100.146.087
+                        311111                SAL                            (532.404.488.624)                 0   (532.404.488.624)
+                        313111                Ditagihkan ke Entitas Lain                    0   (434.894.380.246)  (434.894.380.246)
+                        313121                Diterima dari Entitas Lain                    0     22.896.193.241     22.896.193.241
+                        425122                Pendapatan dari Penjualan Per                 0        (16.393.240)       (16.393.240)
+                        425129                Pendapatan dari Pemindahtanga                 0        (19.076.450)       (19.076.450)
+                        425131                Pendapatan Sewa Tanah, Gedung                 0        (46.492.259)       (46.492.259)
+                        425219                Pendapatan Pelayanan dan Admi                 0         (3.005.000)        (3.005.000)
+                        425232                Pendapatan Uang Meja (Leges)                  0           (440.000)          (440.000)
+                        425233                Pendapatan Ongkos Perkara                     0        (18.450.900)       (18.450.900)
+                        425237                Pendapatan Denda Pelanggaran                  0       (160.846.000)      (160.846.000)
+                        425238                Pendapatan Denda Hasil Tindak                 0        (14.000.000)       (14.000.000)
+                        425239                Pendapatan Kejaksaan dan Pera                 0        (26.278.500)       (26.278.500)
+                        425243                Pendapatan Uang Pengganti Tin                 0       (100.000.000)      (100.000.000)
+                        425246                Pendapatan Denda Hasil Tindak                 0       (100.000.000)      (100.000.000)
+                        425248                Pendapatan Hasil Pengembalian                 0        (30.000.000)       (30.000.000)
+                        425249                Pendapatan Uang Sitaan Tindak                 0         (8.207.000)        (8.207.000)
+                        425261                Pendapatan Penerbitan Surat I                 0       (353.060.000)      (353.060.000)
+                        425262                Pendapatan Perpanjangan Surat                 0       (217.125.000)      (217.125.000)
+                        425263                Pendapatan Penerbitan Surat T                 0       (703.200.000)      (703.200.000)
+                        425266                Pendapatan Tanda Nomor Kendar                 0       (449.280.000)      (449.280.000)
+                        425267                Pendapatan Ujian Keterampilan                 0            (50.000)           (50.000)
+                        425273                Pendapatan  Penerbitan Surat                  0       (102.750.000)      (102.750.000)
+                        425274                Pendapatan Surat Tanda Coba K                 0        (89.600.000)       (89.600.000)
+                        425276                Pendapatan Pengamanan Obyek V                 0       (219.180.000)      (219.180.000)
+                        425411                Pendapatan Ujian/Seleksi Masu                 0       (135.130.000)      (135.130.000)
+                        425412                Pendapatan Biaya Pendidikan                   0    (10.437.730.000)   (10.437.730.000)
+                        425419                Pendapatan Pendidikan Lainnya                 0         (1.450.000)        (1.450.000)
+                        425513                Pendapatan Jasa Kepelabuhanan                 0     (3.478.409.264)    (3.478.409.264)
+                        425514                Pendapatan Jasa Navigasi Pela                 0       (585.417.763)      (585.417.763)
+                        425515                Pendapatan Jasa Perkapalan da                 0       (219.474.365)      (219.474.365)
+                        425516                Pendapatan Jasa Kebandarudara                 0       (463.861.933)      (463.861.933)
+                        425519                Pendapatan Jasa Transportasi                  0        (75.808.763)       (75.808.763)
+                        425764                Pendapatan Jasa Lembaga Keuan                 0            (47.580)           (47.580)
+                        425911                Penerimaan Kembali Belanja Pe                 0         (2.042.269)        (2.042.269)
+                        425912                Penerimaan Kembali Belanja Ba                 0       (297.621.795)      (297.621.795)
+
+
+
+
+SPAN ALL LEDGERS                              Neraca Lajur - Detail Segmen Tambahan               Tanggal Laporan: 19-JUL-2020 19:04
+                                                    Year to date pada JUN-20                              Halaman:     2 dari      7
+
+                 Mata Uang:  IDR
+                      Tipe:  Total
+              Kisaran KPPN:  156 sampai 156
+
+
+                Buku Besar:  SPAN Accrual Ledger
+                      KPPN:  156 KOLAKA
+
+
+BANK                    AKUN                  Deskripsi AKUN                        Saldo Awal  Aktivitas Periode        Saldo Akhir
+----------------------- --------------------- ----------------------------- ------------------ ------------------ ------------------
+00000                   425913                Penerimaan Kembali Belanja Mo                 0       (141.571.489)      (141.571.489)
+                        511111                Belanja Gaji Pokok PNS                        0     25.656.985.810     25.656.985.810
+                        511119                Belanja Pembulatan Gaji PNS                   0            389.204            389.204
+                        511121                Belanja Tunj. Suami/Istri PNS                 0      1.810.601.813      1.810.601.813
+                        511122                Belanja Tunj. Anak PNS                        0        564.921.716        564.921.716
+                        511123                Belanja Tunj. Struktural PNS                  0        657.910.000        657.910.000
+                        511124                Belanja Tunj. Fungsional PNS                  0      3.598.960.100      3.598.960.100
+                        511125                Belanja Tunj. PPh PNS                         0        256.148.713        256.148.713
+                        511126                Belanja Tunj. Beras PNS                       0      1.331.876.220      1.331.876.220
+                        511129                Belanja Uang Makan PNS                        0      4.123.757.000      4.123.757.000
+                        511151                Belanja Tunjangan Umum PNS                    0        588.624.550        588.624.550
+                        511152                Belanja Tunjangan Profesi Gur                 0     10.770.849.734     10.770.849.734
+                        511153                Belanja Tunjangan Profesi Dos                 0        267.423.800        267.423.800
+                        511154                Belanja Tunjangan Kehormatan                  0         43.720.000         43.720.000
+                        511155                Belanja Tunjangan Tambahan Pe                 0          5.750.000          5.750.000
+                        511157                Belanja Tunjangan Kemahalan H                 0        156.600.000        156.600.000
+                        511161                Belanja Gaji Pokok PNS TNI/Po                 0         89.142.900         89.142.900
+                        511169                Belanja Pembulatan Gaji PNS T                 0              1.667              1.667
+                        511171                Belanja Tunj. Suami/Istri PNS                 0          4.350.030          4.350.030
+                        511172                Belanja Tunj. Anak PNS TNI/Po                 0            604.006            604.006
+                        511173                Belanja Tunj. Struktural PNS                  0          3.430.000          3.430.000
+                        511176                Belanja Tunj. Beras PNS TNI/P                 0          3.548.580          3.548.580
+                        511179                Belanja Uang Makan PNS TNI/Po                 0         16.905.000         16.905.000
+                        511193                Belanja Tunjangan Umum PNS TN                 0          4.685.000          4.685.000
+                        511211                Belanja Gaji Pokok TNI/POLRI                  0     17.391.135.400     17.391.135.400
+                        511219                Belanja Pembulatan Gaji TNI/P                 0            283.579            283.579
+                        511221                Belanja Tunj. Suami/Istri TNI                 0      1.365.341.100      1.365.341.100
+                        511222                Belanja Tunj. Anak TNI/POLRI                  0        410.887.302        410.887.302
+                        511223                Belanja Tunj. Struktural TNI/                 0      1.248.510.000      1.248.510.000
+                        511225                Belanja Tunj. PPh TNI/POLRI                   0        111.746.031        111.746.031
+                        511226                Belanja Tunj. Beras TNI/POLRI                 0      1.356.730.764      1.356.730.764
+                        511228                Belanja Tunj. Lauk pauk TNI/P                 0      9.198.660.000      9.198.660.000
+                        511232                Belanja Tunj. Kowan/Polwan TN                 0         11.650.000         11.650.000
+                        511233                Belanja Tunj. Babinkamtibmas                  0         71.000.000         71.000.000
+                        511235                Belanja Tunj. Kompensasi Kerj                 0         14.400.000         14.400.000
+                        511244                Belanja Tunjangan Umum TNI/Po                 0        260.775.000        260.775.000
+                        511521                Belanja Tunjangan Tenaga Pend                 0      3.488.645.000      3.488.645.000
+                        511522                Belanja Tunjangan Tenaga Peny                 0        952.000.000        952.000.000
+                        511529                Belanja Tunjangan Tenaga Pend                 0        583.000.000        583.000.000
+                        512111                Belanja Uang Honor Tetap                      0        103.800.000        103.800.000
+                        512211                Belanja Uang Lembur                           0        330.692.000        330.692.000
+                        512411                Belanja Pegawai (Tunjangan Kh                 0     11.097.901.045     11.097.901.045
+                        521111                Belanja Keperluan Perkantoran                 0      4.961.261.620      4.961.261.620
+                        521112                Belanja Pengadaan Bahan Makan                 0      2.487.213.318      2.487.213.318
+                        521113                Belanja Penambah Daya Tahan T                 0         33.292.600         33.292.600
+                        521114                Belanja Pengiriman Surat Dina                 0         48.169.246         48.169.246
+                        521115                Belanja Honor Operasional Sat                 0      3.378.855.480      3.378.855.480
+
+
+
+
+SPAN ALL LEDGERS                              Neraca Lajur - Detail Segmen Tambahan               Tanggal Laporan: 19-JUL-2020 19:04
+                                                    Year to date pada JUN-20                              Halaman:     3 dari      7
+
+                 Mata Uang:  IDR
+                      Tipe:  Total
+              Kisaran KPPN:  156 sampai 156
+
+
+                Buku Besar:  SPAN Accrual Ledger
+                      KPPN:  156 KOLAKA
+
+
+BANK                    AKUN                  Deskripsi AKUN                        Saldo Awal  Aktivitas Periode        Saldo Akhir
+----------------------- --------------------- ----------------------------- ------------------ ------------------ ------------------
+00000                   521119                Belanja Barang Operasional La                 0      9.659.519.424      9.659.519.424
+                        521131                Belanja Barang Operasional -                  0        138.982.599        138.982.599
+                        521211                Belanja Bahan                                 0      1.166.920.160      1.166.920.160
+                        521213                Belanja Honor Output Kegiatan                 0      2.668.662.836      2.668.662.836
+                        521219                Belanja Barang Non Operasiona                 0      5.825.576.051      5.825.576.051
+                        521233                Belanja Barang Pemberian Bant                 0      6.221.100.000      6.221.100.000
+                        521241                Belanja Barang Non Operasiona                 0         46.171.000         46.171.000
+                        521811                Belanja Barang Persediaan Bar                 0      2.092.934.653      2.092.934.653
+                        521813                Belanja Barang Persediaan Pit                 0          8.360.000          8.360.000
+                        522111                Belanja Langganan Listrik                     0      1.210.161.614      1.210.161.614
+                        522112                Belanja Langganan Telepon                     0        176.804.995        176.804.995
+                        522113                Belanja Langganan Air                         0         67.203.539         67.203.539
+                        522119                Belanja Langganan Daya dan Ja                 0        409.412.617        409.412.617
+                        522121                Belanja Jasa Pos dan Giro                     0            667.000            667.000
+                        522131                Belanja Jasa Konsultan                        0         95.126.200         95.126.200
+                        522141                Belanja Sewa                                  0        709.100.000        709.100.000
+                        522151                Belanja Jasa Profesi                          0        157.775.000        157.775.000
+                        522191                Belanja Jasa Lainnya                          0      5.657.701.238      5.657.701.238
+                        523111                Belanja Pemeliharaan Gedung d                 0      1.975.103.571      1.975.103.571
+                        523114                Belanja Pemeliharaan Gedung d                 0          1.950.000          1.950.000
+                        523119                Belanja Pemeliharaan Gedung d                 0        109.869.511        109.869.511
+                        523121                Belanja Pemeliharaan Peralata                 0      2.251.178.664      2.251.178.664
+                        523122                Belanja Bahan Bakar Minyak da                 0        345.725.000        345.725.000
+                        523123                Belanja Barang Persediaan Pem                 0      1.911.335.000      1.911.335.000
+                        523131                Belanja Pemeliharaan Jalan da                 0        436.454.000        436.454.000
+                        523133                Belanja Pemeliharaan Jaringan                 0          2.175.000          2.175.000
+                        524111                Belanja Perjalanan Dinas Bias                 0      2.615.316.876      2.615.316.876
+                        524113                Belanja Perjalanan Dinas Dala                 0        642.832.500        642.832.500
+                        524114                Belanja Perjalanan Dinas Pake                 0        276.780.000        276.780.000
+                        524119                Belanja Perjalanan Dinas Pake                 0         95.822.408         95.822.408
+                        526111                Belanja Tanah Untuk Diserahka                 0         66.266.411         66.266.411
+                        526112                Belanja Peralatan Dan Mesin U                 0        106.000.000        106.000.000
+                        526113                Belanja Gedung Dan Bangunan U                 0        519.115.695        519.115.695
+                        526115                Belanja Barang Fisik Lainnya                  0      6.172.458.000      6.172.458.000
+                        526312                Belanja Barang untuk Bantuan                  0         13.200.000         13.200.000
+                        631111                Belanja Dana Alokasi Khusus R                 0     10.357.815.549     10.357.815.549
+                        631212                Belanja Dana Alokasi Khusus P                 0     15.617.292.000     15.617.292.000
+                        662111                Belanja Dana Desa                             0    213.059.528.186    213.059.528.186
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank 00000:                                   (362.103.159.270)    (9.817.002.354)  (371.920.161.624)
+
+10461                   111511                Kas dalam Transito - BUN         (2.716.721.703)                 0     (2.716.721.703)
+                        111611                Kas di Bendahara Pengeluaran      3.173.843.000                  0      3.173.843.000
+                        111613                Kas di Bendahara Pengeluaran     15.809.448.421                  0     15.809.448.421
+                        132111                Peralatan dan Mesin               1.071.216.500                  0      1.071.216.500
+                        133111                Gedung dan Bangunan                 303.724.000                  0        303.724.000
+                        134111                Jalan dan Jembatan                  174.415.000                  0        174.415.000
+
+
+
+
+SPAN ALL LEDGERS                              Neraca Lajur - Detail Segmen Tambahan               Tanggal Laporan: 19-JUL-2020 19:04
+                                                    Year to date pada JUN-20                              Halaman:     4 dari      7
+
+                 Mata Uang:  IDR
+                      Tipe:  Total
+              Kisaran KPPN:  156 sampai 156
+
+
+                Buku Besar:  SPAN Accrual Ledger
+                      KPPN:  156 KOLAKA
+
+
+BANK                    AKUN                  Deskripsi AKUN                        Saldo Awal  Aktivitas Periode        Saldo Akhir
+----------------------- --------------------- ----------------------------- ------------------ ------------------ ------------------
+10461                   135121                Aset Tetap Lainnya                   24.163.372                  0         24.163.372
+                        219913                Utang Jangka Pendek Lain-lain         3.520.000                  0          3.520.000
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank 10461:                                     17.843.608.590                  0     17.843.608.590
+
+10462                   111511                Kas dalam Transito - BUN           (359.767.965)                 0       (359.767.965)
+                        111611                Kas di Bendahara Pengeluaran      1.432.500.000                  0      1.432.500.000
+                        111613                Kas di Bendahara Pengeluaran      8.317.977.275                  0      8.317.977.275
+                        131111                Tanah                                80.120.000                  0         80.120.000
+                        132111                Peralatan dan Mesin               6.836.277.500                  0      6.836.277.500
+                        133111                Gedung dan Bangunan               2.879.037.400                  0      2.879.037.400
+                        134111                Jalan dan Jembatan                1.213.141.000                  0      1.213.141.000
+                        134113                Jaringan                             28.000.000                  0         28.000.000
+                        135121                Aset Tetap Lainnya                  309.893.319                  0        309.893.319
+                        219913                Utang Jangka Pendek Lain-lain       512.126.121                  0        512.126.121
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank 10462:                                     21.249.304.650                  0     21.249.304.650
+
+10463                   111511                Kas dalam Transito - BUN            (58.188.545)                 0        (58.188.545)
+                        111611                Kas di Bendahara Pengeluaran        128.440.000                  0        128.440.000
+                        111613                Kas di Bendahara Pengeluaran         28.770.000                  0         28.770.000
+                        132111                Peralatan dan Mesin                 147.975.000                  0        147.975.000
+                        133111                Gedung dan Bangunan                 785.482.000                  0        785.482.000
+                        134111                Jalan dan Jembatan               18.966.000.000                  0     18.966.000.000
+                        135121                Aset Tetap Lainnya                    5.191.424                  0          5.191.424
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank 10463:                                     20.003.669.879                  0     20.003.669.879
+
+30153                   111611                Kas di Bendahara Pengeluaran     (3.121.108.211)                 0     (3.121.108.211)
+                        111613                Kas di Bendahara Pengeluaran    (22.427.845.856)                 0    (22.427.845.856)
+                        132111                Peralatan dan Mesin                  78.693.000                  0         78.693.000
+                        133111                Gedung dan Bangunan                   4.581.100                  0          4.581.100
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank 30153:                                    (25.465.679.967)                 0    (25.465.679.967)
+
+30357                   111611                Kas di Bendahara Pengeluaran          3.464.500                  0          3.464.500
+                        111613                Kas di Bendahara Pengeluaran         (1.388.200)                 0         (1.388.200)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank 30357:                                          2.076.300                  0          2.076.300
+
+57964                   111822                Kas Lainnya di Kementerian Ne        26.422.120     10.123.354.880     10.149.777.000
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank 57964:                                         26.422.120     10.123.354.880     10.149.777.000
+
+E1040                   212191                Utang kepada Pihak Ketiga Lai    (1.047.452.668)       (22.283.395)    (1.069.736.063)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E1040:                                     (1.047.452.668)       (22.283.395)    (1.069.736.063)
+
+
+
+
+SPAN ALL LEDGERS                              Neraca Lajur - Detail Segmen Tambahan               Tanggal Laporan: 19-JUL-2020 19:04
+                                                    Year to date pada JUN-20                              Halaman:     5 dari      7
+
+                 Mata Uang:  IDR
+                      Tipe:  Total
+              Kisaran KPPN:  156 sampai 156
+
+
+                Buku Besar:  SPAN Accrual Ledger
+                      KPPN:  156 KOLAKA
+
+
+BANK                    AKUN                  Deskripsi AKUN                        Saldo Awal  Aktivitas Periode        Saldo Akhir
+----------------------- --------------------- ----------------------------- ------------------ ------------------ ------------------
+E1041                   212191                Utang kepada Pihak Ketiga Lai       (24.089.400)        (9.224.000)       (33.313.400)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E1041:                                        (24.089.400)        (9.224.000)       (33.313.400)
+
+E1042                   212191                Utang kepada Pihak Ketiga Lai    (6.742.140.858)      (230.584.135)    (6.972.724.993)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E1042:                                     (6.742.140.858)      (230.584.135)    (6.972.724.993)
+
+E1043                   212191                Utang kepada Pihak Ketiga Lai        (4.013.800)                 0         (4.013.800)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E1043:                                         (4.013.800)                 0         (4.013.800)
+
+E1044                   212191                Utang kepada Pihak Ketiga Lai       (44.428.030)        (6.045.162)       (50.473.192)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E1044:                                        (44.428.030)        (6.045.162)       (50.473.192)
+
+E1046                   212191                Utang kepada Pihak Ketiga Lai       (71.377.125)        (8.215.834)       (79.592.959)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E1046:                                        (71.377.125)        (8.215.834)       (79.592.959)
+
+E8002                   212191                Utang kepada Pihak Ketiga Lai          (750.000)                 0           (750.000)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E8002:                                           (750.000)                 0           (750.000)
+
+E8010                   212191                Utang kepada Pihak Ketiga Lai      (889.541.680)                 0       (889.541.680)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank E8010:                                       (889.541.680)                 0       (889.541.680)
+
+F0470                   111511                Kas dalam Transito - BUN        (12.648.533.300)                 0    (12.648.533.300)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank F0470:                                    (12.648.533.300)                 0    (12.648.533.300)
+
+F0471                   111511                Kas dalam Transito - BUN           (164.143.600)                 0       (164.143.600)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank F0471:                                       (164.143.600)                 0       (164.143.600)
+
+H0153                   111611                Kas di Bendahara Pengeluaran         57.329.974                  0         57.329.974
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank H0153:                                         57.329.974                  0         57.329.974
+
+K0734                   111511                Kas dalam Transito - BUN              4.200.000                  0          4.200.000
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank K0734:                                          4.200.000                  0          4.200.000
+
+KZ023                   111511                Kas dalam Transito - BUN             31.908.000                  0         31.908.000
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank KZ023:                                         31.908.000                  0         31.908.000
+
+
+
+
+SPAN ALL LEDGERS                              Neraca Lajur - Detail Segmen Tambahan               Tanggal Laporan: 19-JUL-2020 19:04
+                                                    Year to date pada JUN-20                              Halaman:     6 dari      7
+
+                 Mata Uang:  IDR
+                      Tipe:  Total
+              Kisaran KPPN:  156 sampai 156
+
+
+                Buku Besar:  SPAN Accrual Ledger
+                      KPPN:  156 KOLAKA
+
+
+BANK                    AKUN                  Deskripsi AKUN                        Saldo Awal  Aktivitas Periode        Saldo Akhir
+----------------------- --------------------- ----------------------------- ------------------ ------------------ ------------------
+KZ024                   111511                Kas dalam Transito - BUN          1.005.363.000                  0      1.005.363.000
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank KZ024:                                      1.005.363.000                  0      1.005.363.000
+
+M1987                   111511                Kas dalam Transito - BUN         23.242.483.804                  0     23.242.483.804
+                        111611                Kas di Bendahara Pengeluaran       (343.230.417)                 0       (343.230.417)
+                        111613                Kas di Bendahara Pengeluaran       (662.426.224)                 0       (662.426.224)
+                        219913                Utang Jangka Pendek Lain-lain        (3.520.000)                 0         (3.520.000)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M1987:                                     22.233.307.163                  0     22.233.307.163
+
+M1988                   111511                Kas dalam Transito - BUN         54.440.937.687                  0     54.440.937.687
+                        111611                Kas di Bendahara Pengeluaran         (7.554.190)                 0         (7.554.190)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M1988:                                     54.433.383.497                  0     54.433.383.497
+
+M1989                   111511                Kas dalam Transito - BUN         10.444.445.817                  0     10.444.445.817
+                        111611                Kas di Bendahara Pengeluaran        (23.174.132)                 0        (23.174.132)
+                        111613                Kas di Bendahara Pengeluaran       (116.350.000)                 0       (116.350.000)
+                        219913                Utang Jangka Pendek Lain-lain      (512.126.121)                 0       (512.126.121)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M1989:                                      9.792.795.564                  0      9.792.795.564
+
+M2237                   111613                Kas di Bendahara Pengeluaran         (2.586.000)                 0         (2.586.000)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M2237:                                         (2.586.000)                 0         (2.586.000)
+
+M2738                   111511                Kas dalam Transito - BUN        230.006.082.363                  0    230.006.082.363
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M2738:                                    230.006.082.363                  0    230.006.082.363
+
+M9002                   111611                Kas di Bendahara Pengeluaran        (81.518.137)                 0        (81.518.137)
+                        111613                Kas di Bendahara Pengeluaran       (166.228.600)                 0       (166.228.600)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M9002:                                       (247.746.737)                 0       (247.746.737)
+
+M9003                   111611                Kas di Bendahara Pengeluaran        (89.026.800)                 0        (89.026.800)
+                        111613                Kas di Bendahara Pengeluaran       (101.137.591)                 0       (101.137.591)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M9003:                                       (190.164.391)                 0       (190.164.391)
+
+M9004                   111611                Kas di Bendahara Pengeluaran       (610.870.840)       (30.000.000)      (640.870.840)
+                        111613                Kas di Bendahara Pengeluaran       (896.430.402)                 0       (896.430.402)
+                        425267                Pendapatan Ujian Keterampilan                 0             50.000             50.000
+                        425274                Pendapatan Surat Tanda Coba K                 0            (50.000)           (50.000)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M9004:                                     (1.507.301.242)       (30.000.000)    (1.537.301.242)
+
+
+
+
+SPAN ALL LEDGERS                              Neraca Lajur - Detail Segmen Tambahan               Tanggal Laporan: 19-JUL-2020 19:04
+                                                    Year to date pada JUN-20                              Halaman:     7 dari      7
+
+                 Mata Uang:  IDR
+                      Tipe:  Total
+              Kisaran KPPN:  156 sampai 156
+
+
+                Buku Besar:  SPAN Accrual Ledger
+                      KPPN:  156 KOLAKA
+
+
+BANK                    AKUN                  Deskripsi AKUN                        Saldo Awal  Aktivitas Periode        Saldo Akhir
+----------------------- --------------------- ----------------------------- ------------------ ------------------ ------------------
+M9005                   111611                Kas di Bendahara Pengeluaran       (240.743.446)                 0       (240.743.446)
+                        111613                Kas di Bendahara Pengeluaran       (153.494.300)                 0       (153.494.300)
+                        425912                Penerimaan Kembali Belanja Ba                 0           (840.000)          (840.000)
+                        521219                Belanja Barang Non Operasiona                 0            840.000            840.000
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M9005:                                       (394.237.746)                 0       (394.237.746)
+
+M9076                   111611                Kas di Bendahara Pengeluaran        (47.581.000)                 0        (47.581.000)
+                        111613                Kas di Bendahara Pengeluaran       (242.543.286)                 0       (242.543.286)
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank M9076:                                       (290.124.286)                 0       (290.124.286)
+
+N0517                   111511                Kas dalam Transito - BUN         35.148.019.000                  0     35.148.019.000
+                                                                            ------------------ ------------------ ------------------
+                         Total Bank N0517:                                     35.148.019.000                  0     35.148.019.000
+
+                                                                            ------------------ ------------------ ------------------
+                         Total KPPN 156:                                                    0                  0                  0
