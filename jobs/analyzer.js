@@ -138,7 +138,7 @@ class Analyzer{
   async __akunIsAnalyzee(input) {
     if(this.akrualkas[input.akun]) {
       if(input.ledger === 'Accrual_SATKER') {
-        console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
+        // console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
 
         try {
           await JawabanAkrualkasModel.updateOne(
@@ -157,7 +157,7 @@ class Analyzer{
       }
 
       if(input.ledger === 'Cash_SATKER') {
-        console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
+        // console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
 
         try {
           await JawabanAkrualkasModel.updateOne(
@@ -185,11 +185,11 @@ class Analyzer{
         const regex = RegExp(filter.akun);
 
         if(regex.test(input.akun)) {
-          const answer = this.__truthyAnalyzer(input, filter);
-
-          if(!answer) {
-            this.__updateJawaban(input, filter, answer);
-          }
+          this.__truthyAnalyzer(input, filter).then(res => {
+            if(!res) {
+              this.__updateJawaban(input, filter, res);
+            }
+          });
         }
       });
     }

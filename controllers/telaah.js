@@ -1,38 +1,47 @@
 const express = require('express');
-const PertanyaanModel = require('../models/pertanyaan');
+const JawabanModel = require('../models/jawaban');
 const JawabanAkrualkasModel = require('../models/jawaban-akrualkas');
 
 const router = express.Router();
 
-router.get('/', async (request, response) => {
-  let data = [];
+router.post('/', async (request, response) => {
+  const { kdkppn, bulan } = request.body;
+
+  let segmenSatker = [];
   let akrualkas = [];
 
   try {
-    data = await PertanyaanModel.aggregate([
+    segmenSatker = await JawabanModel.aggregate([
+      { $match: {kdkppn: kdkppn, bulan: bulan} },
       { $lookup: {
-        from: 'jawabans',
-        localField: '_id',
-        foreignField: 'pertanyaan_id',
-        as: 'jawaban'
-      }},
+        from: 'pertanyaans',
+        localField: 'pertanyaan_id',
+        foreignField: '_id',
+        as: 'pertanyaan'
+      } },
+      {
+        $unwind: '$pertanyaan'
+      },
       { $group: {
-        _id: '$ledger',
+        _id: '$pertanyaan.ledger',
         body: {$push: '$$ROOT'}
       }}
     ]);
 
     akrualkas = await JawabanAkrualkasModel.aggregate([
-      {$group: {
-        _id: '$kategori',
-        data: {$push: '$$ROOT'}
+      { $match: {kdkppn: kdkppn} },
+      { $group: {
+        _id: {kategori: '$kategori', akun: '$akun'},
+        body: {$push: '$$ROOT'}
+      }},
+      { $group: {
+        _id: '$_id.kategori',
+        body: {$push: {
+          akun: '$_id.akun',
+          body: '$body'
+        }}
       }}
     ]);
-
-    // data.push({
-    //   _id: 'Akrualkas',
-    //   body: akrualkas
-    // });
   } catch (error) {
     return response.status(500).send({
       msg: 'something went wrong'
@@ -41,7 +50,7 @@ router.get('/', async (request, response) => {
 
   const message = {
     message: 'success',
-    data: data,
+    segmen_satker: segmenSatker,
     akrualkas: akrualkas
   }
 

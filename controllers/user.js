@@ -17,14 +17,22 @@ router.get('/', async (request, response) => {
 
   return response.status(200).send({
     msg: 'success',
-    data: user
+    data: user[0]
   });
 });
 
 router.post('/', async (request, response) => {
+  let user = {};
+
   try {
-    const user = new User(request.body);
-    await user.save();
+    userData = await User.find({kdkppn: request.body.kdkppn});
+
+    if(userData.length === 0){
+      user = new User(request.body);
+      await user.save();
+    } else {
+      user = userData[0];
+    }
   } catch (error) {
     return response.status(500).send({
       msg: 'something went wrong'
@@ -32,7 +40,8 @@ router.post('/', async (request, response) => {
   }
 
   return response.status(200).send({
-    msg: 'success'
+    msg: 'success',
+    user: user
   });
 });
 
