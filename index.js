@@ -20,5 +20,6 @@ app.use('/user', controllers.user);
 app.use('/upload', controllers.upload);
 app.use('/single_filter', controllers.singleFilter);
 app.use('/telaah', controllers.telaah);
+app.use('/download', controllers.download);
 
 app.listen(port, () => console.log(`Using port ${port}`));

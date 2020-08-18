@@ -49,7 +49,19 @@ const accrualVsCashSeeder = async (kdkppn, bulan) => {
   let akuns = {};
 
   akrualKas.forEach(element => {
+    // let placeholder = {
+    //   kdkppn: kdkppn,
+    //   bulan: bulan,
+    //   kategori: element.kategori,
+    //   ledger: element.ledger,
+    //   akun: 'TOTAL ' + element.kategori,
+    //   nilai: 0
+    // };
+
+    // data.push(placeholder);
+
     element.akuns.forEach(akun => {
+      // let perakun = JSON.parse(JSON.stringify(placeholder));
       let perakun = {};
 
       perakun['kdkppn'] = kdkppn;
@@ -61,6 +73,7 @@ const accrualVsCashSeeder = async (kdkppn, bulan) => {
 
       data.push(perakun);
 
+      // jika akun akrual ada, push kas pada ledger
       if(akuns[akun]) {
         akuns[akun].push(element.ledger);
       } else {

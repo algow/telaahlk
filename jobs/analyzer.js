@@ -6,6 +6,7 @@ const SingleFilterModel = require('../models/single-filter');
 const JawabanModel = require('../models/jawaban');
 const UserModel = require('../models/user');
 const JawabanAkrualkasModel = require('../models/jawaban-akrualkas');
+const DownloadModel = require('../models/download');
 
 class Analyzer{
   constructor(){
@@ -60,12 +61,21 @@ class Analyzer{
     console.log('seeding sukses');
     const timestamp = Date.now();
   
+    const excelName = kdkppn + '_' + timestamp + '.xls';
+
     analyzeeFiles.forEach(file => {
-      this.__parser(kdkppn, bulan, file, timestamp);
+      this.__parser(kdkppn, bulan, file, excelName);
     });
+
+    const download = new DownloadModel({
+      kdkppn,
+      bulan,
+      file: excelName
+    });
+    download.save();
   };
 
-  __parser(kdkppn, bulan, filename, timestamp) {
+  __parser(kdkppn, bulan, filename, excelName) {
     const KPPN = kdkppn;
     let LEDGER = '';
   
@@ -85,9 +95,9 @@ class Analyzer{
       input: fs.createReadStream('./publics/text/' + filename),
       console: false
     });
-  
-    const writeStream = fs.createWriteStream('./publics/xls/'+ kdkppn + '_' + timestamp + '.xls', {flags: 'a'});
-  
+    
+    const writeStream = fs.createWriteStream('./publics/xls/'+ excelName, {flags: 'a'});
+    
     readInterface.on('line', line => {
       const oneLine = line.split(/\s{2,}/);
   

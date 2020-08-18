@@ -1,16 +1,20 @@
 const express = require('express');
 const JawabanModel = require('../models/jawaban');
 const JawabanAkrualkasModel = require('../models/jawaban-akrualkas');
+const DownloadModel = require('../models/download');
 
 const router = express.Router();
 
 router.post('/', async (request, response) => {
   const { kdkppn, bulan } = request.body;
 
+  let excelFile = '';
   let segmenSatker = [];
   let akrualkas = [];
 
   try {
+    excelFile = await DownloadModel.find({kdkppn: kdkppn, bulan: bulan});
+
     segmenSatker = await JawabanModel.aggregate([
       { $match: {kdkppn: kdkppn, bulan: bulan} },
       { $lookup: {
@@ -22,10 +26,12 @@ router.post('/', async (request, response) => {
       {
         $unwind: '$pertanyaan'
       },
+      {$sort:{ 'pertanyaan.nomor': 1 }},
       { $group: {
         _id: '$pertanyaan.ledger',
         body: {$push: '$$ROOT'}
       }}
+      
     ]);
 
     akrualkas = await JawabanAkrualkasModel.aggregate([
@@ -52,6 +58,14 @@ router.post('/', async (request, response) => {
     message: 'success',
     segmen_satker: segmenSatker,
     akrualkas: akrualkas
+  }
+
+  try {
+    message.file = excelFile[0].file;
+  } catch (error) {
+    return response.status(404).send({
+      msg: 'tidak ditemukan'
+    });
   }
 
   return response.status(200).send(message);
