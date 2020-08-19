@@ -67,6 +67,7 @@ const accrualVsCashSeeder = async (kdkppn, bulan) => {
       perakun['kdkppn'] = kdkppn;
       perakun['bulan'] = bulan;
       perakun['kategori'] = element.kategori;
+      perakun['desc'] = element.desc;
       perakun['ledger'] = element.ledger;
       perakun['akun'] = akun;
       perakun['nilai'] = 0;
@@ -98,79 +99,108 @@ const accrualVsCashSeeder = async (kdkppn, bulan) => {
 exports.jawabanSeeder = jawabanSeeder;
 exports.accrualVsCashSeeder = accrualVsCashSeeder;
 
-// const accrualVsCashSeeder = () => {
+// const accrualVsCashSeeder = async () => {
 //   const data = [
 //     {
 //       kategori: 'Kas_Kppn',
+//       desc: 'Kas di KPPN',
 //       ledger: 'kas',
 //       akuns: [111121, 111214, 111412, 111421, 111422, 111423, 111431, 111432, 111433, 111441, 111461, 111462, 111463, 111469]
 //     },
 //     {
 //       kategori: 'Kas_Kppn',
+//       desc: 'Kas di KPPN',
 //       ledger: 'akrual',
 //       akuns: [111121, 111214, 111412, 111421, 111422, 111423, 111431, 111432, 111433, 111441, 111461, 111462, 111463, 111469]
 //     },
 //     {
 //       kategori: 'Kas_Hibah',
+//       desc: 'Kas Lainnya di K/L Dari Hibah',
 //       ledger: 'kas',
 //       akuns: [111822]
 //     },
 //     {
 //       kategori: 'Kas_Hibah',
+//       desc: 'Kas Lainnya di K/L Dari Hibah',
 //       ledger: 'akrual',
 //       akuns: [111822]
 //     },
 //     {
 //       kategori: 'Kas_Blu',
+//       desc: 'Kas di BLU',
 //       ledger: 'kas',
 //       akuns: [111911]
 //     },
 //     {
 //       kategori: 'Kas_Blu',
+//       desc: 'Kas di BLU',
 //       ledger: 'akrual',
 //       akuns: [111911]
 //     },
 //     {
 //       kategori: 'Kas_Transito',
+//       desc: 'Kas Dalam Transito',
 //       ledger: 'kas',
 //       akuns: [111511, 111512, 111517, 818111, 828111]
 //     },
 //     {
 //       kategori: 'Kas_Transito',
+//       desc: 'Kas Dalam Transito',
 //       ledger: 'akrual',
 //       akuns: [111511, 111512]
 //     },
 //     {
 //       kategori: 'Retur',
+//       desc: 'Utang Kepada Pihak Ketiga (Retur)',
 //       ledger: 'kas',
 //       akuns: [212191, 219941, 816211, 817111, 817113, 827111, 827113]
 //     },
 //     {
 //       kategori: 'Retur',
+//       desc: 'Utang Kepada Pihak Ketiga (Retur)',
 //       ledger: 'akrual',
 //       akuns: [212145, 212191, 219941]
 //     },
 //     {
 //       kategori: 'Koreksi_Pemindahbukuan',
+//       desc: 'Utang Kepada Pihak Ketiga (Koreksi Pemindahbukuan)',
 //       ledger: 'kas',
 //       akuns: [219913, 816111, 826111]
 //     },
 //     {
 //       kategori: 'Koreksi_Pemindahbukuan',
+//       desc: 'Utang Kepada Pihak Ketiga (Koreksi Pemindahbukuan)',
 //       ledger: 'akrual',
 //       akuns: [219913]
 //     },
 //     {
 //       kategori: 'Kesalahan_Bank',
+//       desc: 'Utang Kepada Pihak Ketiga (Kesalahan Sistem Perbankan)',
 //       ledger: 'kas',
 //       akuns: [219944, 817911, 827911]
 //     },
 //     {
 //       kategori: 'Kesalahan_Bank',
+//       desc: 'Utang Kepada Pihak Ketiga (Kesalahan Sistem Perbankan)',
 //       ledger: 'akrual',
 //       akuns: [219944]
 //     }
 //   ];
 
-//   AkrualKasModel.insertMany(data);
+//   let foo = '';
+
+//   try {
+//     foo = await AkrualKasModel.insertMany(data);
+//   } catch (error) {
+//     console.log(error);
+//   }
+
+//   console.log(foo);
+//   // AkrualKasModel.insertMany(data).then(res => {
+//   //   console.log(res);
+//   // }).catch(err => {
+//   //   console.log(err)
+//   // });
 // }
+
+// exports.accrualVsCashSeeder = accrualVsCashSeeder;

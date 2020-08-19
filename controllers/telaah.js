@@ -2,10 +2,12 @@ const express = require('express');
 const JawabanModel = require('../models/jawaban');
 const JawabanAkrualkasModel = require('../models/jawaban-akrualkas');
 const DownloadModel = require('../models/download');
+// const {accrualVsCashSeeder} = require('../models/seeder');
 
 const router = express.Router();
 
 router.post('/', async (request, response) => {
+  // accrualVsCashSeeder();
   const { kdkppn, bulan } = request.body;
 
   let excelFile = '';
