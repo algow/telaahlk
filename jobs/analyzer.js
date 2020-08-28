@@ -137,9 +137,14 @@ class Analyzer{
   
           schema.akun = oneLine[1];
           schema.deskripsi = oneLine[2];
-          schema.saldo_awal = (isNaN(parseInt(oneLine[3].split('.').join(''))) ? parseInt(oneLine[3].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[3].split('.').join('')));
-          schema.aktivitas = (isNaN(parseInt(oneLine[4].split('.').join(''))) ? parseInt(oneLine[4].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[4].split('.').join('')));
-          schema.saldo_akhir = (isNaN(parseInt(oneLine[5].split('.').join(''))) ? parseInt(oneLine[5].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[5].split('.').join('')));
+
+          try {
+            schema.saldo_awal = (isNaN(parseInt(oneLine[3].split('.').join(''))) ? parseInt(oneLine[3].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[3].split('.').join('')));
+            schema.aktivitas = (isNaN(parseInt(oneLine[4].split('.').join(''))) ? parseInt(oneLine[4].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[4].split('.').join('')));
+            schema.saldo_akhir = (isNaN(parseInt(oneLine[5].split('.').join(''))) ? parseInt(oneLine[5].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[5].split('.').join('')));  
+          } catch (error) {
+            console.log(error, KPPN);
+          }
           
           this.__akunIsAnalyzee(schema);
           writeStream.write("'" + schema.kppn + '\t' + schema.ledger + '\t' + "'" + schema.satker + '\t' + "'" + schema.akun + '\t' + schema.deskripsi + '\t' + schema.saldo_awal + '\t' + schema.aktivitas + '\t' + schema.saldo_akhir + '\n');
