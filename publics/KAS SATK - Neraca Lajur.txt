@@ -54,14 +54,14 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         524111                Belanja Perjalanan Dinas Bias                 0         72.540.000         72.540.000
                         524113                Belanja Perjalanan Dinas Dala                 0         19.200.000         19.200.000
                         524114                Belanja Perjalanan Dinas Pake                 0            600.000            600.000
-                        532111                Belanja Modal Peralatan dan M                 0        179.600.000        179.600.000
+                        532111                Belanja Modal Peralatan dan M                 0        179.600.000        179.600.000
                         815111                Penerimaan Pengembalian Uang                  0        (39.000.000)       (39.000.000)
                         815511                Penerimaan Pengembalian Tamba                 0       (156.912.500)      (156.912.500)
                         825111                Pengeluaran Uang Persediaan                   0         99.000.000         99.000.000
                         825511                Pengeluaran Tambahan Uang Per                 0        156.912.500        156.912.500
                                                                             ------------------ ------------------ ------------------
                          Total Satker 008458:                                               0                  0                  0
-
+
 
 
 
@@ -118,7 +118,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521114                Belanja Pengiriman Surat Dina                 0          1.259.369          1.259.369
                         521211                Belanja Bahan                                 0         32.990.000         32.990.000
                         521811                Belanja Barang Persediaan Bar                 0         18.772.000         18.772.000
-                        522131                Belanja Jasa Konsultan                        0         15.600.000         15.600.000
+                        522131                Belanja Jasa Konsultan                        0         15.600.000         15.600.000
                         524113                Belanja Perjalanan Dinas Dala                 0         21.700.000         21.700.000
                         825111                Pengeluaran Uang Persediaan                   0         10.000.000         10.000.000
                                                                             ------------------ ------------------ ------------------
@@ -126,7 +126,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
 
 200475                  313111                Ditagihkan ke Entitas Lain                    0       (584.091.554)      (584.091.554)
                         511111                Belanja Gaji Pokok PNS                        0        262.660.800        262.660.800
-
+
 
 
 
@@ -183,7 +183,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         425764                Pendapatan Jasa Lembaga Keuan                 0            (47.580)           (47.580)
                         521115                Belanja Honor Operasional Sat                 0         48.300.000         48.300.000
                         521211                Belanja Bahan                                 0         47.070.000         47.070.000
-                        521213                Belanja Honor Output Kegiatan                 0          6.940.000          6.940.000
+                        521213                Belanja Honor Output Kegiatan                 0          6.940.000          6.940.000
                         521219                Belanja Barang Non Operasiona                 0         17.700.000         17.700.000
                         521811                Belanja Barang Persediaan Bar                 0          8.590.000          8.590.000
                         524111                Belanja Perjalanan Dinas Bias                 0         77.860.000         77.860.000
@@ -191,7 +191,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         526112                Belanja Peralatan Dan Mesin U                 0        106.000.000        106.000.000
                         526113                Belanja Gedung Dan Bangunan U                 0         40.085.100         40.085.100
                         526115                Belanja Barang Fisik Lainnya                  0      4.232.920.000      4.232.920.000
-
+
 
 
 
@@ -248,7 +248,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
 
 307690                  313111                Ditagihkan ke Entitas Lain                    0     (1.493.964.341)    (1.493.964.341)
                         425131                Pendapatan Sewa Tanah, Gedung                 0           (209.286)          (209.286)
-                        511111                Belanja Gaji Pokok PNS                        0        369.733.100        369.733.100
+                        511111                Belanja Gaji Pokok PNS                        0        369.733.100        369.733.100
                         511119                Belanja Pembulatan Gaji PNS                   0              6.270              6.270
                         511121                Belanja Tunj. Suami/Istri PNS                 0         27.570.540         27.570.540
                         511122                Belanja Tunj. Anak PNS                        0          8.586.612          8.586.612
@@ -256,7 +256,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511124                Belanja Tunj. Fungsional PNS                  0        376.695.000        376.695.000
                         511125                Belanja Tunj. PPh PNS                         0         44.643.997         44.643.997
                         511126                Belanja Tunj. Beras PNS                       0         18.901.620         18.901.620
-
+
 
 
 
@@ -313,7 +313,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
 401844                  313111                Ditagihkan ke Entitas Lain                    0     (1.761.035.209)    (1.761.035.209)
                         313121                Diterima dari Entitas Lain                    0             50.000             50.000
                         511111                Belanja Gaji Pokok PNS                        0        497.116.000        497.116.000
-                        511119                Belanja Pembulatan Gaji PNS                   0              7.112              7.112
+                        511119                Belanja Pembulatan Gaji PNS                   0              7.112              7.112
                         511121                Belanja Tunj. Suami/Istri PNS                 0         32.449.250         32.449.250
                         511122                Belanja Tunj. Anak PNS                        0         11.086.642         11.086.642
                         511123                Belanja Tunj. Struktural PNS                  0         14.070.000         14.070.000
@@ -321,7 +321,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511125                Belanja Tunj. PPh PNS                         0             21.000             21.000
                         511126                Belanja Tunj. Beras PNS                       0         24.695.220         24.695.220
                         511129                Belanja Uang Makan PNS                        0         73.642.000         73.642.000
-
+
 
 
 
@@ -378,7 +378,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521115                Belanja Honor Operasional Sat                 0         20.250.000         20.250.000
                         521119                Belanja Barang Operasional La                 0         16.919.000         16.919.000
                         521811                Belanja Barang Persediaan Bar                 0         14.069.500         14.069.500
-                        522111                Belanja Langganan Listrik                     0          7.021.000          7.021.000
+                        522111                Belanja Langganan Listrik                     0          7.021.000          7.021.000
                         522113                Belanja Langganan Air                         0            845.200            845.200
                         522141                Belanja Sewa                                  0         71.280.000         71.280.000
                         523111                Belanja Pemeliharaan Gedung d                 0         15.289.000         15.289.000
@@ -386,7 +386,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         524111                Belanja Perjalanan Dinas Bias                 0         47.970.000         47.970.000
                         532111                Belanja Modal Peralatan dan M                 0         62.500.000         62.500.000
                         533111                Belanja Modal Gedung dan Bang                 0        613.258.200        613.258.200
-
+
 
 
 
@@ -443,7 +443,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         425233                Pendapatan Ongkos Perkara                     0         (4.500.000)        (4.500.000)
                         425239                Pendapatan Kejaksaan dan Pera                 0         (6.123.500)        (6.123.500)
                         521219                Belanja Barang Non Operasiona                 0            491.000            491.000
-                                                                            ------------------ ------------------ ------------------
+                                                                            ------------------ ------------------ ------------------
                          Total Satker 401994:                                               0                  0                  0
 
 402032                  313111                Ditagihkan ke Entitas Lain                    0        (45.868.400)       (45.868.400)
@@ -451,7 +451,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         425233                Pendapatan Ongkos Perkara                     0           (420.000)          (420.000)
                         425239                Pendapatan Kejaksaan dan Pera                 0           (622.500)          (622.500)
                         521114                Belanja Pengiriman Surat Dina                 0          1.788.500          1.788.500
-
+
 
 
 
@@ -508,7 +508,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521119                Belanja Barang Operasional La                 0         26.468.000         26.468.000
                         521131                Belanja Barang Operasional -                  0         23.853.000         23.853.000
                         521211                Belanja Bahan                                 0         36.941.000         36.941.000
-                        521213                Belanja Honor Output Kegiatan                 0          3.420.000          3.420.000
+                        521213                Belanja Honor Output Kegiatan                 0          3.420.000          3.420.000
                         521219                Belanja Barang Non Operasiona                 0          1.365.000          1.365.000
                         521241                Belanja Barang Non Operasiona                 0         22.147.000         22.147.000
                         521811                Belanja Barang Persediaan Bar                 0         77.186.000         77.186.000
@@ -516,7 +516,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522112                Belanja Langganan Telepon                     0          2.172.500          2.172.500
                         522113                Belanja Langganan Air                         0          1.423.000          1.423.000
                         522151                Belanja Jasa Profesi                          0          3.200.000          3.200.000
-
+
 
 
 
@@ -573,7 +573,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         523121                Belanja Pemeliharaan Peralata                 0        120.951.550        120.951.550
                         523131                Belanja Pemeliharaan Jalan da                 0         93.954.000         93.954.000
                         524111                Belanja Perjalanan Dinas Bias                 0        207.654.548        207.654.548
-                        532111                Belanja Modal Peralatan dan M                 0        547.000.000        547.000.000
+                        532111                Belanja Modal Peralatan dan M                 0        547.000.000        547.000.000
                         533111                Belanja Modal Gedung dan Bang                 0        303.028.500        303.028.500
                         825111                Pengeluaran Uang Persediaan                   0         36.000.000         36.000.000
                                                                             ------------------ ------------------ ------------------
@@ -581,7 +581,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
 
 416004                  313111                Ditagihkan ke Entitas Lain                    0     (2.088.878.066)    (2.088.878.066)
                         313121                Diterima dari Entitas Lain                    0                 80                 80
-
+
 
 
 
@@ -638,7 +638,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511111                Belanja Gaji Pokok PNS                        0      1.010.514.300      1.010.514.300
                         511119                Belanja Pembulatan Gaji PNS                   0             15.001             15.001
                         511121                Belanja Tunj. Suami/Istri PNS                 0         72.307.830         72.307.830
-                        511122                Belanja Tunj. Anak PNS                        0         24.973.184         24.973.184
+                        511122                Belanja Tunj. Anak PNS                        0         24.973.184         24.973.184
                         511123                Belanja Tunj. Struktural PNS                  0          3.780.000          3.780.000
                         511124                Belanja Tunj. Fungsional PNS                  0        102.341.000        102.341.000
                         511125                Belanja Tunj. PPh PNS                         0            802.296            802.296
@@ -646,7 +646,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511129                Belanja Uang Makan PNS                        0        176.911.000        176.911.000
                         511151                Belanja Tunjangan Umum PNS                    0          2.555.000          2.555.000
                         511152                Belanja Tunjangan Profesi Gur                 0      1.149.814.600      1.149.814.600
-
+
 
 
 
@@ -703,7 +703,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511123                Belanja Tunj. Struktural PNS                  0          3.430.000          3.430.000
                         511124                Belanja Tunj. Fungsional PNS                  0          4.578.000          4.578.000
                         511126                Belanja Tunj. Beras PNS                       0          2.607.120          2.607.120
-                        511129                Belanja Uang Makan PNS                        0         11.766.000         11.766.000
+                        511129                Belanja Uang Makan PNS                        0         11.766.000         11.766.000
                         511152                Belanja Tunjangan Profesi Gur                 0        148.252.800        148.252.800
                         511521                Belanja Tunjangan Tenaga Pend                 0         10.500.000         10.500.000
                         512411                Belanja Pegawai (Tunjangan Kh                 0         20.228.604         20.228.604
@@ -711,7 +711,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521115                Belanja Honor Operasional Sat                 0          8.400.000          8.400.000
                         521233                Belanja Barang Pemberian Bant                 0        160.500.000        160.500.000
                         521811                Belanja Barang Persediaan Bar                 0          2.500.000          2.500.000
-
+
 
 
 
@@ -768,7 +768,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521213                Belanja Honor Output Kegiatan                 0          5.100.000          5.100.000
                         521219                Belanja Barang Non Operasiona                 0         17.994.000         17.994.000
                         521811                Belanja Barang Persediaan Bar                 0          2.000.000          2.000.000
-                        522131                Belanja Jasa Konsultan                        0         31.756.200         31.756.200
+                        522131                Belanja Jasa Konsultan                        0         31.756.200         31.756.200
                         524111                Belanja Perjalanan Dinas Bias                 0         32.884.000         32.884.000
                         526111                Belanja Tanah Untuk Diserahka                 0         66.266.411         66.266.411
                         526113                Belanja Gedung Dan Bangunan U                 0        479.030.595        479.030.595
@@ -776,7 +776,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         825111                Pengeluaran Uang Persediaan                   0         20.000.000         20.000.000
                                                                             ------------------ ------------------ ------------------
                          Total Satker 419108:                                               0                  0                  0
-
+
 
 
 
@@ -833,7 +833,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511124                Belanja Tunj. Fungsional PNS                  0         62.790.000         62.790.000
                         511125                Belanja Tunj. PPh PNS                         0          1.017.904          1.017.904
                         511126                Belanja Tunj. Beras PNS                       0         70.319.820         70.319.820
-                        511129                Belanja Uang Makan PNS                        0        190.031.000        190.031.000
+                        511129                Belanja Uang Makan PNS                        0        190.031.000        190.031.000
                         511151                Belanja Tunjangan Umum PNS                    0         31.865.000         31.865.000
                         511522                Belanja Tunjangan Tenaga Peny                 0        360.000.000        360.000.000
                         512111                Belanja Uang Honor Tetap                      0          9.600.000          9.600.000
@@ -841,7 +841,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521111                Belanja Keperluan Perkantoran                 0         25.875.000         25.875.000
                         521213                Belanja Honor Output Kegiatan                 0        108.325.000        108.325.000
                         521219                Belanja Barang Non Operasiona                 0         20.400.000         20.400.000
-
+
 
 
 
@@ -898,7 +898,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         523111                Belanja Pemeliharaan Gedung d                 0         80.000.000         80.000.000
                         524111                Belanja Perjalanan Dinas Bias                 0         36.875.000         36.875.000
                         524113                Belanja Perjalanan Dinas Dala                 0         44.510.000         44.510.000
-                        532111                Belanja Modal Peralatan dan M                 0        139.900.000        139.900.000
+                        532111                Belanja Modal Peralatan dan M                 0        139.900.000        139.900.000
                         825111                Pengeluaran Uang Persediaan                   0         30.000.000         30.000.000
                                                                             ------------------ ------------------ ------------------
                          Total Satker 419742:                                               0                  0                  0
@@ -906,7 +906,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
 419743                  313111                Ditagihkan ke Entitas Lain                    0       (373.864.050)      (373.864.050)
                         511111                Belanja Gaji Pokok PNS                        0        122.885.500        122.885.500
                         511119                Belanja Pembulatan Gaji PNS                   0              1.169              1.169
-
+
 
 
 
@@ -963,7 +963,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521241                Belanja Barang Non Operasiona                 0          3.680.000          3.680.000
                         521811                Belanja Barang Persediaan Bar                 0          8.980.000          8.980.000
                         522111                Belanja Langganan Listrik                     0          7.527.000          7.527.000
-                        522112                Belanja Langganan Telepon                     0          8.751.000          8.751.000
+                        522112                Belanja Langganan Telepon                     0          8.751.000          8.751.000
                         523111                Belanja Pemeliharaan Gedung d                 0         33.100.000         33.100.000
                         523119                Belanja Pemeliharaan Gedung d                 0         45.800.000         45.800.000
                         523121                Belanja Pemeliharaan Peralata                 0         45.000.000         45.000.000
@@ -971,7 +971,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         532111                Belanja Modal Peralatan dan M                 0        223.000.000        223.000.000
                         536111                Belanja Modal Lainnya                         0         58.000.000         58.000.000
                         825111                Pengeluaran Uang Persediaan                   0         37.500.000         37.500.000
-
+
 
 
 
@@ -1028,7 +1028,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         825111                Pengeluaran Uang Persediaan                   0         30.000.000         30.000.000
                                                                             ------------------ ------------------ ------------------
                          Total Satker 429074:                                               0                  0                  0
-
+
 431968                  313111                Ditagihkan ke Entitas Lain                    0     (5.369.413.840)    (5.369.413.840)
                         511111                Belanja Gaji Pokok PNS                        0        912.879.780        912.879.780
                         511119                Belanja Pembulatan Gaji PNS                   0             14.644             14.644
@@ -1036,7 +1036,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511122                Belanja Tunj. Anak PNS                        0         18.517.072         18.517.072
                         511123                Belanja Tunj. Struktural PNS                  0         79.380.000         79.380.000
                         511125                Belanja Tunj. PPh PNS                         0          2.017.460          2.017.460
-
+
 
 
 
@@ -1093,7 +1093,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511129                Belanja Uang Makan PNS                        0         56.747.000         56.747.000
                         511151                Belanja Tunjangan Umum PNS                    0         15.585.000         15.585.000
                         512211                Belanja Uang Lembur                           0         17.480.000         17.480.000
-                        512411                Belanja Pegawai (Tunjangan Kh                 0        392.552.640        392.552.640
+                        512411                Belanja Pegawai (Tunjangan Kh                 0        392.552.640        392.552.640
                         521111                Belanja Keperluan Perkantoran                 0         37.883.000         37.883.000
                         521114                Belanja Pengiriman Surat Dina                 0          4.951.000          4.951.000
                         521115                Belanja Honor Operasional Sat                 0         74.000.000         74.000.000
@@ -1101,7 +1101,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521213                Belanja Honor Output Kegiatan                 0          2.250.000          2.250.000
                         521811                Belanja Barang Persediaan Bar                 0        127.189.934        127.189.934
                         522111                Belanja Langganan Listrik                     0        218.115.335        218.115.335
-
+
 
 
 
@@ -1158,7 +1158,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         523111                Belanja Pemeliharaan Gedung d                 0          1.500.000          1.500.000
                         523121                Belanja Pemeliharaan Peralata                 0         21.830.085         21.830.085
                         523122                Belanja Bahan Bakar Minyak da                 0        311.400.000        311.400.000
-                        524111                Belanja Perjalanan Dinas Bias                 0        165.642.021        165.642.021
+                        524111                Belanja Perjalanan Dinas Bias                 0        165.642.021        165.642.021
                         524113                Belanja Perjalanan Dinas Dala                 0          9.750.000          9.750.000
                         524119                Belanja Perjalanan Dinas Pake                 0         16.792.408         16.792.408
                         532111                Belanja Modal Peralatan dan M                 0         63.000.000         63.000.000
@@ -1166,7 +1166,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         825113                Pengeluaran Uang Persediaan P                 0         12.000.000         12.000.000
                                                                             ------------------ ------------------ ------------------
                          Total Satker 521861:                                               0                  0                  0
-
+
 
 
 
@@ -1223,7 +1223,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         425912                Penerimaan Kembali Belanja Ba                 0        (12.290.000)       (12.290.000)
                         511111                Belanja Gaji Pokok PNS                        0        457.945.200        457.945.200
                         511119                Belanja Pembulatan Gaji PNS                   0              6.226              6.226
-                        511121                Belanja Tunj. Suami/Istri PNS                 0         29.900.880         29.900.880
+                        511121                Belanja Tunj. Suami/Istri PNS                 0         29.900.880         29.900.880
                         511122                Belanja Tunj. Anak PNS                        0         11.218.596         11.218.596
                         511123                Belanja Tunj. Struktural PNS                  0          2.520.000          2.520.000
                         511124                Belanja Tunj. Fungsional PNS                  0         36.281.000         36.281.000
@@ -1231,7 +1231,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511126                Belanja Tunj. Beras PNS                       0         21.146.640         21.146.640
                         511129                Belanja Uang Makan PNS                        0         74.723.000         74.723.000
                         511151                Belanja Tunjangan Umum PNS                    0          2.555.000          2.555.000
-
+
 
 
 
@@ -1288,7 +1288,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522111                Belanja Langganan Listrik                     0            926.192            926.192
                         523111                Belanja Pemeliharaan Gedung d                 0          8.425.000          8.425.000
                         523121                Belanja Pemeliharaan Peralata                 0         14.500.000         14.500.000
-                        524111                Belanja Perjalanan Dinas Bias                 0         14.500.000         14.500.000
+                        524111                Belanja Perjalanan Dinas Bias                 0         14.500.000         14.500.000
                         532111                Belanja Modal Peralatan dan M                 0         25.000.000         25.000.000
                         536111                Belanja Modal Lainnya                         0         10.000.000         10.000.000
                         825111                Pengeluaran Uang Persediaan                   0         25.000.000         25.000.000
@@ -1296,7 +1296,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                          Total Satker 574959:                                               0                  0                  0
 
 574963                  313111                Ditagihkan ke Entitas Lain                    0       (939.407.544)      (939.407.544)
-
+
 
 
 
@@ -1353,7 +1353,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511121                Belanja Tunj. Suami/Istri PNS                 0         30.989.260         30.989.260
                         511122                Belanja Tunj. Anak PNS                        0          7.295.238          7.295.238
                         511123                Belanja Tunj. Struktural PNS                  0          6.300.000          6.300.000
-                        511124                Belanja Tunj. Fungsional PNS                  0         31.707.000         31.707.000
+                        511124                Belanja Tunj. Fungsional PNS                  0         31.707.000         31.707.000
                         511125                Belanja Tunj. PPh PNS                         0            666.450            666.450
                         511126                Belanja Tunj. Beras PNS                       0         21.074.220         21.074.220
                         511129                Belanja Uang Makan PNS                        0         97.591.000         97.591.000
@@ -1361,7 +1361,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511152                Belanja Tunjangan Profesi Gur                 0        321.317.960        321.317.960
                         512411                Belanja Pegawai (Tunjangan Kh                 0        160.653.054        160.653.054
                         521111                Belanja Keperluan Perkantoran                 0         28.027.500         28.027.500
-
+
 
 
 
@@ -1418,14 +1418,14 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522113                Belanja Langganan Air                         0            285.000            285.000
                         523111                Belanja Pemeliharaan Gedung d                 0         18.177.000         18.177.000
                         523133                Belanja Pemeliharaan Jaringan                 0          2.175.000          2.175.000
-                        524111                Belanja Perjalanan Dinas Bias                 0          8.350.000          8.350.000
+                        524111                Belanja Perjalanan Dinas Bias                 0          8.350.000          8.350.000
                         524113                Belanja Perjalanan Dinas Dala                 0          3.000.000          3.000.000
                         532111                Belanja Modal Peralatan dan M                 0        100.996.500        100.996.500
                         536111                Belanja Modal Lainnya                         0         40.000.000         40.000.000
                         825111                Pengeluaran Uang Persediaan                   0         30.000.000         30.000.000
                                                                             ------------------ ------------------ ------------------
                          Total Satker 576207:                                               0                  0                  0
-
+
 
 
 
@@ -1482,7 +1482,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521211                Belanja Bahan                                 0         14.125.000         14.125.000
                         521213                Belanja Honor Output Kegiatan                 0          4.900.000          4.900.000
                         521219                Belanja Barang Non Operasiona                 0          5.125.000          5.125.000
-                        521811                Belanja Barang Persediaan Bar                 0         23.700.000         23.700.000
+                        521811                Belanja Barang Persediaan Bar                 0         23.700.000         23.700.000
                         522111                Belanja Langganan Listrik                     0         53.126.952         53.126.952
                         522112                Belanja Langganan Telepon                     0          7.179.622          7.179.622
                         522119                Belanja Langganan Daya dan Ja                 0            676.725            676.725
@@ -1490,7 +1490,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         523119                Belanja Pemeliharaan Gedung d                 0         10.999.500         10.999.500
                         523121                Belanja Pemeliharaan Peralata                 0         39.496.533         39.496.533
                         524111                Belanja Perjalanan Dinas Bias                 0         14.149.800         14.149.800
-
+
 
 
 
@@ -1547,7 +1547,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511244                Belanja Tunjangan Umum TNI/Po                 0        177.225.000        177.225.000
                         512211                Belanja Uang Lembur                           0         66.900.000         66.900.000
                         521112                Belanja Pengadaan Bahan Makan                 0        796.646.800        796.646.800
-                        521115                Belanja Honor Operasional Sat                 0         20.037.000         20.037.000
+                        521115                Belanja Honor Operasional Sat                 0         20.037.000         20.037.000
                         521119                Belanja Barang Operasional La                 0      5.212.010.300      5.212.010.300
                         521211                Belanja Bahan                                 0         14.668.000         14.668.000
                         521213                Belanja Honor Output Kegiatan                 0         58.604.000         58.604.000
@@ -1555,7 +1555,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522111                Belanja Langganan Listrik                     0        126.736.238        126.736.238
                         522112                Belanja Langganan Telepon                     0          1.200.000          1.200.000
                         522113                Belanja Langganan Air                         0         24.057.900         24.057.900
-
+
 
 
 
@@ -1612,7 +1612,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         825111                Pengeluaran Uang Persediaan                   0         15.000.000         15.000.000
                                                                             ------------------ ------------------ ------------------
                          Total Satker 659452:                                               0                  0                  0
-
+
 659491                  313111                Ditagihkan ke Entitas Lain                    0     (1.083.772.297)    (1.083.772.297)
                         313121                Diterima dari Entitas Lain                    0          9.268.500          9.268.500
                         425911                Penerimaan Kembali Belanja Pe                 0               (720)              (720)
@@ -1620,7 +1620,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511111                Belanja Gaji Pokok PNS                        0        144.261.300        144.261.300
                         511119                Belanja Pembulatan Gaji PNS                   0              4.857              4.857
                         511121                Belanja Tunj. Suami/Istri PNS                 0         11.135.140         11.135.140
-
+
 
 
 
@@ -1677,7 +1677,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521111                Belanja Keperluan Perkantoran                 0         32.098.500         32.098.500
                         521115                Belanja Honor Operasional Sat                 0         12.250.000         12.250.000
                         521211                Belanja Bahan                                 0         37.360.000         37.360.000
-                        521213                Belanja Honor Output Kegiatan                 0         11.150.000         11.150.000
+                        521213                Belanja Honor Output Kegiatan                 0         11.150.000         11.150.000
                         521219                Belanja Barang Non Operasiona                 0         70.440.000         70.440.000
                         521811                Belanja Barang Persediaan Bar                 0         11.930.000         11.930.000
                         522111                Belanja Langganan Listrik                     0          4.282.500          4.282.500
@@ -1685,7 +1685,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522113                Belanja Langganan Air                         0          1.450.000          1.450.000
                         523111                Belanja Pemeliharaan Gedung d                 0         12.794.000         12.794.000
                         523121                Belanja Pemeliharaan Peralata                 0          1.020.000          1.020.000
-
+
 
 
 
@@ -1742,7 +1742,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
 664082                  313111                Ditagihkan ke Entitas Lain                    0     (2.479.813.430)    (2.479.813.430)
                         313121                Diterima dari Entitas Lain                    0         30.000.000         30.000.000
                         511111                Belanja Gaji Pokok PNS                        0        872.607.100        872.607.100
-                        511119                Belanja Pembulatan Gaji PNS                   0             12.988             12.988
+                        511119                Belanja Pembulatan Gaji PNS                   0             12.988             12.988
                         511121                Belanja Tunj. Suami/Istri PNS                 0         63.886.940         63.886.940
                         511122                Belanja Tunj. Anak PNS                        0         21.609.556         21.609.556
                         511123                Belanja Tunj. Struktural PNS                  0          7.210.000          7.210.000
@@ -1750,7 +1750,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511125                Belanja Tunj. PPh PNS                         0             63.550             63.550
                         511126                Belanja Tunj. Beras PNS                       0         48.231.720         48.231.720
                         511129                Belanja Uang Makan PNS                        0        122.011.000        122.011.000
-
+
 
 
 
@@ -1807,7 +1807,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         512411                Belanja Pegawai (Tunjangan Kh                 0        110.537.747        110.537.747
                         521111                Belanja Keperluan Perkantoran                 0         73.424.000         73.424.000
                         521115                Belanja Honor Operasional Sat                 0         25.000.000         25.000.000
-                        521131                Belanja Barang Operasional -                  0         24.575.388         24.575.388
+                        521131                Belanja Barang Operasional -                  0         24.575.388         24.575.388
                         521211                Belanja Bahan                                 0         12.208.300         12.208.300
                         521219                Belanja Barang Non Operasiona                 0         16.902.500         16.902.500
                         521233                Belanja Barang Pemberian Bant                 0      2.120.900.000      2.120.900.000
@@ -1815,7 +1815,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522111                Belanja Langganan Listrik                     0          1.119.483          1.119.483
                         522112                Belanja Langganan Telepon                     0          3.517.800          3.517.800
                         522113                Belanja Langganan Air                         0            693.689            693.689
-
+
 
 
 
@@ -1872,7 +1872,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         425276                Pendapatan Pengamanan Obyek V                 0        (29.560.000)       (29.560.000)
                         511161                Belanja Gaji Pokok PNS TNI/Po                 0         18.240.600         18.240.600
                         511169                Belanja Pembulatan Gaji PNS T                 0                552                552
-                        511173                Belanja Tunj. Struktural PNS                  0          3.430.000          3.430.000
+                        511173                Belanja Tunj. Struktural PNS                  0          3.430.000          3.430.000
                         511176                Belanja Tunj. Beras PNS TNI/P                 0            434.520            434.520
                         511179                Belanja Uang Makan PNS TNI/Po                 0          3.780.000          3.780.000
                         511211                Belanja Gaji Pokok TNI/POLRI                  0      5.630.117.800      5.630.117.800
@@ -1880,7 +1880,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511221                Belanja Tunj. Suami/Istri TNI                 0        405.848.770        405.848.770
                         511222                Belanja Tunj. Anak TNI/POLRI                  0        124.517.946        124.517.946
                         511223                Belanja Tunj. Struktural TNI/                 0        432.800.000        432.800.000
-
+
 
 
 
@@ -1937,7 +1937,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511123                Belanja Tunj. Struktural PNS                  0         45.000.000         45.000.000
                         511125                Belanja Tunj. PPh PNS                         0            344.265            344.265
                         511126                Belanja Tunj. Beras PNS                       0         25.636.680         25.636.680
-                        511129                Belanja Uang Makan PNS                        0         47.167.000         47.167.000
+                        511129                Belanja Uang Makan PNS                        0         47.167.000         47.167.000
                         511151                Belanja Tunjangan Umum PNS                    0         12.334.950         12.334.950
                         512211                Belanja Uang Lembur                           0         13.674.000         13.674.000
                         521111                Belanja Keperluan Perkantoran                 0        266.676.500        266.676.500
@@ -1945,7 +1945,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521114                Belanja Pengiriman Surat Dina                 0             25.000             25.000
                         521115                Belanja Honor Operasional Sat                 0         40.250.000         40.250.000
                         521211                Belanja Bahan                                 0         23.804.500         23.804.500
-
+
 
 
 
@@ -2002,7 +2002,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521115                Belanja Honor Operasional Sat                 0         36.820.000         36.820.000
                         521119                Belanja Barang Operasional La                 0          8.880.000          8.880.000
                         521211                Belanja Bahan                                 0         80.802.100         80.802.100
-                        521213                Belanja Honor Output Kegiatan                 0        237.762.736        237.762.736
+                        521213                Belanja Honor Output Kegiatan                 0        237.762.736        237.762.736
                         521219                Belanja Barang Non Operasiona                 0         13.810.000         13.810.000
                         521811                Belanja Barang Persediaan Bar                 0         22.125.000         22.125.000
                         522111                Belanja Langganan Listrik                     0         15.678.281         15.678.281
@@ -2010,7 +2010,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522113                Belanja Langganan Air                         0            332.050            332.050
                         522151                Belanja Jasa Profesi                          0         22.400.000         22.400.000
                         522191                Belanja Jasa Lainnya                          0          2.700.000          2.700.000
-
+
 
 
 
@@ -2067,7 +2067,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521811                Belanja Barang Persediaan Bar                 0         33.080.000         33.080.000
                         521813                Belanja Barang Persediaan Pit                 0          1.530.000          1.530.000
                         522111                Belanja Langganan Listrik                     0         35.301.000         35.301.000
-                        522112                Belanja Langganan Telepon                     0         15.075.000         15.075.000
+                        522112                Belanja Langganan Telepon                     0         15.075.000         15.075.000
                         522113                Belanja Langganan Air                         0          2.672.000          2.672.000
                         522151                Belanja Jasa Profesi                          0          5.600.000          5.600.000
                         523111                Belanja Pemeliharaan Gedung d                 0         86.415.000         86.415.000
@@ -2075,7 +2075,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         523122                Belanja Bahan Bakar Minyak da                 0          5.325.000          5.325.000
                         524111                Belanja Perjalanan Dinas Bias                 0          4.440.000          4.440.000
                         524113                Belanja Perjalanan Dinas Dala                 0          5.200.000          5.200.000
-
+
 
 
 
@@ -2132,7 +2132,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         313121                Diterima dari Entitas Lain                    0     10.849.800.452     10.849.800.452
                         425411                Pendapatan Ujian/Seleksi Masu                 0       (135.130.000)      (135.130.000)
                         425412                Pendapatan Biaya Pendidikan                   0    (10.437.730.000)   (10.437.730.000)
-                        425419                Pendapatan Pendidikan Lainnya                 0         (1.450.000)        (1.450.000)
+                        425419                Pendapatan Pendidikan Lainnya                 0         (1.450.000)        (1.450.000)
                         425911                Penerimaan Kembali Belanja Pe                 0           (745.104)          (745.104)
                         425912                Penerimaan Kembali Belanja Ba                 0       (227.252.945)      (227.252.945)
                         425913                Penerimaan Kembali Belanja Mo                 0        (47.914.507)       (47.914.507)
@@ -2140,7 +2140,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         511119                Belanja Pembulatan Gaji PNS                   0             56.190             56.190
                         511121                Belanja Tunj. Suami/Istri PNS                 0        247.407.680        247.407.680
                         511122                Belanja Tunj. Anak PNS                        0         67.736.934         67.736.934
-
+
 
 
 
@@ -2197,7 +2197,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         521115                Belanja Honor Operasional Sat                 0        233.690.000        233.690.000
                         521131                Belanja Barang Operasional -                  0         20.725.000         20.725.000
                         521211                Belanja Bahan                                 0         43.720.000         43.720.000
-                        521213                Belanja Honor Output Kegiatan                 0          5.550.000          5.550.000
+                        521213                Belanja Honor Output Kegiatan                 0          5.550.000          5.550.000
                         521219                Belanja Barang Non Operasiona                 0          3.250.000          3.250.000
                         521241                Belanja Barang Non Operasiona                 0          5.546.000          5.546.000
                         521811                Belanja Barang Persediaan Bar                 0         43.271.300         43.271.300
@@ -2205,7 +2205,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
                         522112                Belanja Langganan Telepon                     0          8.518.500          8.518.500
                         522113                Belanja Langganan Air                         0            475.000            475.000
                         522141                Belanja Sewa                                  0         62.200.000         62.200.000
-
+
 
 
 

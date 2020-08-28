@@ -54,7 +54,7 @@ D0009                   425131                Pendapatan Sewa Tanah, Gedung     
                         511125                Belanja Tunj. PPh PNS                         0          5.658.822          5.658.822
                         511126                Belanja Tunj. Beras PNS                       0         27.374.760         27.374.760
                         511129                Belanja Uang Makan PNS                        0      3.647.518.000      3.647.518.000
-                        511151                Belanja Tunjangan Umum PNS                    0         (4.245.450)        (4.245.450)
+                        511151                Belanja Tunjangan Umum PNS                    0         (4.245.450)        (4.245.450)
                         511152                Belanja Tunjangan Profesi Gur                 0      6.907.639.574      6.907.639.574
                         511153                Belanja Tunjangan Profesi Dos                 0        214.489.800        214.489.800
                         511154                Belanja Tunjangan Kehormatan                  0         43.720.000         43.720.000
@@ -62,7 +62,7 @@ D0009                   425131                Pendapatan Sewa Tanah, Gedung     
                         511157                Belanja Tunjangan Kemahalan H                 0         16.200.000         16.200.000
                         511179                Belanja Uang Makan PNS TNI/Po                 0         16.905.000         16.905.000
                         511211                Belanja Gaji Pokok TNI/POLRI                  0        100.486.000        100.486.000
-
+
 
 
 
@@ -119,7 +119,7 @@ D0009                   511219                Belanja Pembulatan Gaji TNI/P     
                         522151                Belanja Jasa Profesi                          0        154.575.000        154.575.000
                         522191                Belanja Jasa Lainnya                          0         75.397.518         75.397.518
                         523111                Belanja Pemeliharaan Gedung d                 0        960.171.415        960.171.415
-                        523114                Belanja Pemeliharaan Gedung d                 0          1.950.000          1.950.000
+                        523114                Belanja Pemeliharaan Gedung d                 0          1.950.000          1.950.000
                         523119                Belanja Pemeliharaan Gedung d                 0         64.069.511         64.069.511
                         523121                Belanja Pemeliharaan Peralata                 0      1.753.209.509      1.753.209.509
                         523122                Belanja Bahan Bakar Minyak da                 0         29.325.000         29.325.000
@@ -127,7 +127,7 @@ D0009                   511219                Belanja Pembulatan Gaji TNI/P     
                         523133                Belanja Pemeliharaan Jaringan                 0          2.175.000          2.175.000
                         524111                Belanja Perjalanan Dinas Bias                 0      2.227.943.055      2.227.943.055
                         524113                Belanja Perjalanan Dinas Dala                 0        613.632.500        613.632.500
-
+
 
 
 
@@ -184,7 +184,7 @@ D0010                   511111                Belanja Gaji Pokok PNS            
                         521211                Belanja Bahan                                 0        138.863.800        138.863.800
                         521213                Belanja Honor Output Kegiatan                 0         14.840.000         14.840.000
                         521219                Belanja Barang Non Operasiona                 0         36.784.000         36.784.000
-                        521233                Belanja Barang Pemberian Bant                 0      2.575.850.000      2.575.850.000
+                        521233                Belanja Barang Pemberian Bant                 0      2.575.850.000      2.575.850.000
                         521811                Belanja Barang Persediaan Bar                 0        663.277.649        663.277.649
                         521813                Belanja Barang Persediaan Pit                 0          2.550.000          2.550.000
                         522111                Belanja Langganan Listrik                     0        473.693.537        473.693.537
@@ -192,7 +192,7 @@ D0010                   511111                Belanja Gaji Pokok PNS            
                         522113                Belanja Langganan Air                         0         27.221.200         27.221.200
                         522119                Belanja Langganan Daya dan Ja                 0        286.110.000        286.110.000
                         522131                Belanja Jasa Konsultan                        0         31.756.200         31.756.200
-
+
 
 
 
@@ -249,7 +249,7 @@ D0011                   425911                Penerimaan Kembali Belanja Pe     
                         511129                Belanja Uang Makan PNS                        0         77.426.000         77.426.000
                         511151                Belanja Tunjangan Umum PNS                    0            740.000            740.000
                         511152                Belanja Tunjangan Profesi Gur                 0      3.225.362.760      3.225.362.760
-                        511153                Belanja Tunjangan Profesi Dos                 0         52.934.000         52.934.000
+                        511153                Belanja Tunjangan Profesi Dos                 0         52.934.000         52.934.000
                         511521                Belanja Tunjangan Tenaga Pend                 0        678.584.000        678.584.000
                         512411                Belanja Pegawai (Tunjangan Kh                 0      1.317.383.737      1.317.383.737
                         521111                Belanja Keperluan Perkantoran                 0        102.915.200        102.915.200
@@ -257,7 +257,7 @@ D0011                   425911                Penerimaan Kembali Belanja Pe     
                         521115                Belanja Honor Operasional Sat                 0        813.544.490        813.544.490
                         521119                Belanja Barang Operasional La                 0         10.600.000         10.600.000
                         521211                Belanja Bahan                                 0          1.290.000          1.290.000
-
+
 
 
 
@@ -314,14 +314,14 @@ E1042                   817111                Penerimaan Non Anggaran Pihak     
 
 E1044                   817111                Penerimaan Non Anggaran Pihak                 0         (6.045.162)        (6.045.162)
                         827111                Pengeluaran Non Anggaran Piha                 0          6.045.162          6.045.162
-                                                                            ------------------ ------------------ ------------------
+                                                                            ------------------ ------------------ ------------------
                          Total Bank E1044:                                                  0                  0                  0
 
 E1046                   817111                Penerimaan Non Anggaran Pihak                 0         (8.215.834)        (8.215.834)
                         827111                Pengeluaran Non Anggaran Piha                 0          8.215.834          8.215.834
                                                                             ------------------ ------------------ ------------------
                          Total Bank E1046:                                                  0                  0                  0
-
+
 
 
 
@@ -378,7 +378,7 @@ F0600                   425131                Pendapatan Sewa Tanah, Gedung     
                         521119                Belanja Barang Operasional La                 0        206.600.000        206.600.000
                         521213                Belanja Honor Output Kegiatan                 0          1.500.000          1.500.000
                         521219                Belanja Barang Non Operasiona                 0         24.224.000         24.224.000
-                                                                            ------------------ ------------------ ------------------
+                                                                            ------------------ ------------------ ------------------
                          Total Bank F0600:                                                  0     63.827.693.858     63.827.693.858
 
 F0601                   425131                Pendapatan Sewa Tanah, Gedung                 0         (1.627.240)        (1.627.240)
@@ -386,7 +386,7 @@ F0601                   425131                Pendapatan Sewa Tanah, Gedung     
                         511119                Belanja Pembulatan Gaji PNS                   0             11.809             11.809
                         511121                Belanja Tunj. Suami/Istri PNS                 0         50.986.070         50.986.070
                         511122                Belanja Tunj. Anak PNS                        0         16.459.750         16.459.750
-
+
 
 
 
@@ -443,7 +443,7 @@ F9003                   512111                Belanja Uang Honor Tetap          
                         521111                Belanja Keperluan Perkantoran                 0         42.600.000         42.600.000
                                                                             ------------------ ------------------ ------------------
                          Total Bank F9003:                                                  0         57.000.000         57.000.000
-
+
 F9019                   521115                Belanja Honor Operasional Sat                 0         14.950.000         14.950.000
                         522191                Belanja Jasa Lainnya                          0         19.693.440         19.693.440
                                                                             ------------------ ------------------ ------------------
@@ -451,7 +451,7 @@ F9019                   521115                Belanja Honor Operasional Sat     
 
 H0153                   111611                Kas di Bendahara Pengeluaran        (68.400.000)                 0        (68.400.000)
                         111613                Kas di Bendahara Pengeluaran         (4.800.000)                 0         (4.800.000)
-
+
 
 
 
@@ -508,7 +508,7 @@ M9002                   425513                Pendapatan Jasa Kepelabuhanan     
                         425913                Penerimaan Kembali Belanja Mo                 0        (72.322.158)       (72.322.158)
                                                                             ------------------ ------------------ ------------------
                          Total Bank M9002:                                                  0     (3.710.080.842)    (3.710.080.842)
-
+
 M9003                   425232                Pendapatan Uang Meja (Leges)                  0           (240.000)          (240.000)
                         425233                Pendapatan Ongkos Perkara                     0        (14.690.000)       (14.690.000)
                         425239                Pendapatan Kejaksaan dan Pera                 0        (18.983.000)       (18.983.000)
@@ -516,7 +516,7 @@ M9003                   425232                Pendapatan Uang Meja (Leges)      
                         425514                Pendapatan Jasa Navigasi Pela                 0        (23.898.250)       (23.898.250)
                         425515                Pendapatan Jasa Perkapalan da                 0        (15.051.250)       (15.051.250)
                         425516                Pendapatan Jasa Kebandarudara                 0         (4.692.825)        (4.692.825)
-
+
 
 
 
@@ -573,7 +573,7 @@ M9004                   425122                Pendapatan dari Penjualan Per     
                         425912                Penerimaan Kembali Belanja Ba                 0        (20.056.350)       (20.056.350)
                         521119                Belanja Barang Operasional La                 0         (2.438.000)        (2.438.000)
                         815111                Penerimaan Pengembalian Uang                  0        (30.000.000)       (30.000.000)
-                                                                            ------------------ ------------------ ------------------
+                                                                            ------------------ ------------------ ------------------
                          Total Bank M9004:                                                  0     (3.176.573.347)    (3.176.573.347)
 
 M9005                   425411                Pendapatan Ujian/Seleksi Masu                 0       (107.030.000)      (107.030.000)
@@ -581,7 +581,7 @@ M9005                   425411                Pendapatan Ujian/Seleksi Masu     
                         425419                Pendapatan Pendidikan Lainnya                 0         (1.450.000)        (1.450.000)
                         425513                Pendapatan Jasa Kepelabuhanan                 0       (343.021.858)      (343.021.858)
                         425514                Pendapatan Jasa Navigasi Pela                 0        (58.717.325)       (58.717.325)
-
+
 
 
 

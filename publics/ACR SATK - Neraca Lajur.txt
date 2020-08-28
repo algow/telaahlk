@@ -276,7 +276,7 @@ SATKER                  AKUN                  Deskripsi AKUN                    
 201204                                                                      ------------------ ------------------ ------------------
                          Total Satker 201204:                                               0                  0                  0
 
-111611                Kas di Bendahara Pengeluaran                  0         12.000.000         12.000.000
+201205                  111611                Kas di Bendahara Pengeluaran                  0         12.000.000         12.000.000
                         111822                Kas Lainnya di Kementerian Ne        26.422.120     10.123.354.880     10.149.777.000
                         131111                Tanah                               239.240.000                  0        239.240.000
                         132111                Peralatan dan Mesin               1.825.954.200        156.180.000      1.982.134.200

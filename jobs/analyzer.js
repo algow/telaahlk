@@ -12,26 +12,7 @@ class Analyzer{
   constructor(){
     this.singleFilter = [];
     this.akrualkas = [];
-  }
-
-  async __singeFilter() {
-    let singleFilter = [];
-    let singleFilterGrouped = {
-      Accrual_SATKER: [],
-      Cash_SATKER: []
-    };
-
-    try {
-      singleFilter = await SingleFilterModel.find({});
-    } catch (error) {
-      console.log(error);
-    }
-
-    singleFilter.forEach(element => {
-      singleFilterGrouped[element['ledger']].push(element);
-    });
-
-    return singleFilterGrouped;
+    this.profilKppn = {}
   }
 
   async analyze() {
@@ -43,10 +24,19 @@ class Analyzer{
       this.singleFilter = await this.__singeFilter();
       // await storage.setProccess('yes');
       const queueData = await storage.popQueue();
-  
+
       kdkppn = queueData.kdkppn;
       bulan = queueData.bulan;
       analyzeeFiles = queueData.files;
+
+      const data = await UserModel.find({kdkppn: kdkppn});
+      
+      this.profilKppn = {
+        djppr: data[0].djppr,
+        djpk: data[0].djpk,
+        djp: data[0].djp,
+        djbc: data[0].djbc
+      }
     } catch (error) {
       console.log(error);
     }
@@ -74,6 +64,26 @@ class Analyzer{
     });
     download.save();
   };
+  
+  async __singeFilter() {
+    let singleFilter = [];
+    let singleFilterGrouped = {
+      Accrual_SATKER: [],
+      Cash_SATKER: []
+    };
+
+    try {
+      singleFilter = await SingleFilterModel.find({});
+    } catch (error) {
+      console.log(error);
+    }
+
+    singleFilter.forEach(element => {
+      singleFilterGrouped[element['ledger']].push(element);
+    });
+
+    return singleFilterGrouped;
+  }
 
   __parser(kdkppn, bulan, filename, excelName) {
     const KPPN = kdkppn;
@@ -187,6 +197,7 @@ class Analyzer{
     }
 
     if(this.singleFilter[input['ledger']]) {
+      // console.log(this.singleFilter[input['ledger']]);
       this.singleFilter[input['ledger']].forEach(filter => {
         // Cek akun tanpa filter
         
@@ -205,57 +216,46 @@ class Analyzer{
     }
   };
 
-  async __truthyAnalyzer(input, filter){
-    if(filter.must === 'zero') {
+  async __truthyAnalyzer(input, filter) {
+    if(filter.must && filter.must === 'zero') {
       return input[filter['at']] === 0;
     }
 
-    if(filter.must === 'positive') {
+    if(filter.must && filter.must === 'positive') {
       return input[filter['at']] >= 0;
     }
 
-    if(filter.must === 'negative') {
+    if(filter.must && filter.must === 'negative') {
       return input[filter['at']] <= 0;
     }
 
-    if(filter.must === 'kbun') {
+    if(filter.must && filter.must === 'kbun') {
       const regex = /999[0-9]{3}/;
 
       return regex.test(input[filter['at']]);
     }
 
-    if(filter.must_not === 'kbun') {
+    if(filter.must_not && filter.must_not === 'kbun') {
       const regex = /999[0-9]{3}/;
 
       return !regex.test(input[filter['at']]);
     }
 
-    if(filter.filter === 'satker') {
-      let djppr = '';
-      let djpk = '';
-      let djp = '';
-      let djbc = '';
+    if(filter.filter && filter.filter === 'satker') {     
+      if(filter.must === 'djpdjbc'){
+        const djp = this.profilKppn.djp.split(',');
+        const djbc = this.profilKppn.djbc.split(',');
+        const djpdjbc = [...djp, ...djbc];
 
-      try {
-        const data = await UserModel.find({kdkppn: input.kppn});
-        djppr = data.djppr;
-        djpk = data.djpk;
-        djp = data.djp;
-        djbc = data.djbc;
-      } catch (error) {
-        console.log(error);
+        return !djpdjbc.includes(input.satker);
       }
 
       if(filter.must === 'djpprdjpk'){
-        return input['satker'] === djppr || input['satker'] === djpk;
+        return input['satker'] === this.profilKppn.djppr || input['satker'] === this.profilKppn.djpk;
       }
       
       if(filter.must === 'djppr'){
-        return input['satker'] === djppr;
-      }
-
-      if(filter.must === 'djpdjbc'){
-        return input['satker'] === djp || input['satker'] === djbc;
+        return input['satker'] === this.profilKppn.djppr;
       }
     }
   }

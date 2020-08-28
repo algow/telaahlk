@@ -23,19 +23,12 @@ const eventInit = () => {
       const isProccessing = await storage.getProccess();
 
       if(isProccessing === 'no'){
-        await storage.setProccess('yes');
-        await Analyzer.analyze();
-        await storage.setProccess('no');
-        const queueNum = await storage.getQueue();
-
-        if(queueNum.length > 0) {
-          await pub();
-        }
+        asyncAnalyzer();
       }
     } catch (error) {
       console.log(error);
     }
-  });  
+  });
 }
 
 const pub = () => {
@@ -44,6 +37,17 @@ const pub = () => {
 
 exports.eventInit = eventInit;
 exports.pub = pub;
+
+const asyncAnalyzer = async () => {
+  await storage.setProccess('yes');
+  await Analyzer.analyze();
+  await storage.setProccess('no');
+  const queueNum = await storage.getQueue();
+
+  if(queueNum.length > 0) {
+    await pub();
+  }
+}
 
 // class EventRedis {
 //   constructor() {

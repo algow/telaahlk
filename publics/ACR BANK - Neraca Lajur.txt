@@ -54,7 +54,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
                         425411                Pendapatan Ujian/Seleksi Masu                 0       (135.130.000)      (135.130.000)
                         425412                Pendapatan Biaya Pendidikan                   0    (10.437.730.000)   (10.437.730.000)
                         425419                Pendapatan Pendidikan Lainnya                 0         (1.450.000)        (1.450.000)
-                        425513                Pendapatan Jasa Kepelabuhanan                 0     (3.478.409.264)    (3.478.409.264)
+                        425513                Pendapatan Jasa Kepelabuhanan                 0     (3.478.409.264)    (3.478.409.264)
                         425514                Pendapatan Jasa Navigasi Pela                 0       (585.417.763)      (585.417.763)
                         425515                Pendapatan Jasa Perkapalan da                 0       (219.474.365)      (219.474.365)
                         425516                Pendapatan Jasa Kebandarudara                 0       (463.861.933)      (463.861.933)
@@ -62,7 +62,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
                         425764                Pendapatan Jasa Lembaga Keuan                 0            (47.580)           (47.580)
                         425911                Penerimaan Kembali Belanja Pe                 0         (2.042.269)        (2.042.269)
                         425912                Penerimaan Kembali Belanja Ba                 0       (297.621.795)      (297.621.795)
-
+
 
 
 
@@ -119,7 +119,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
                         511521                Belanja Tunjangan Tenaga Pend                 0      3.488.645.000      3.488.645.000
                         511522                Belanja Tunjangan Tenaga Peny                 0        952.000.000        952.000.000
                         511529                Belanja Tunjangan Tenaga Pend                 0        583.000.000        583.000.000
-                        512111                Belanja Uang Honor Tetap                      0        103.800.000        103.800.000
+                        512111                Belanja Uang Honor Tetap                      0        103.800.000        103.800.000
                         512211                Belanja Uang Lembur                           0        330.692.000        330.692.000
                         512411                Belanja Pegawai (Tunjangan Kh                 0     11.097.901.045     11.097.901.045
                         521111                Belanja Keperluan Perkantoran                 0      4.961.261.620      4.961.261.620
@@ -127,7 +127,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
                         521113                Belanja Penambah Daya Tahan T                 0         33.292.600         33.292.600
                         521114                Belanja Pengiriman Surat Dina                 0         48.169.246         48.169.246
                         521115                Belanja Honor Operasional Sat                 0      3.378.855.480      3.378.855.480
-
+
 
 
 
@@ -184,7 +184,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
                         631212                Belanja Dana Alokasi Khusus P                 0     15.617.292.000     15.617.292.000
                         662111                Belanja Dana Desa                             0    213.059.528.186    213.059.528.186
                                                                             ------------------ ------------------ ------------------
-                         Total Bank 00000:                                   (362.103.159.270)    (9.817.002.354)  (371.920.161.624)
+                         Total Bank 00000:                                   (362.103.159.270)    (9.817.002.354)  (371.920.161.624)
 
 10461                   111511                Kas dalam Transito - BUN         (2.716.721.703)                 0     (2.716.721.703)
                         111611                Kas di Bendahara Pengeluaran      3.173.843.000                  0      3.173.843.000
@@ -192,7 +192,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
                         132111                Peralatan dan Mesin               1.071.216.500                  0      1.071.216.500
                         133111                Gedung dan Bangunan                 303.724.000                  0        303.724.000
                         134111                Jalan dan Jembatan                  174.415.000                  0        174.415.000
-
+
 
 
 
@@ -249,7 +249,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
                         111613                Kas di Bendahara Pengeluaran         (1.388.200)                 0         (1.388.200)
                                                                             ------------------ ------------------ ------------------
                          Total Bank 30357:                                          2.076.300                  0          2.076.300
-
+
 57964                   111822                Kas Lainnya di Kementerian Ne        26.422.120     10.123.354.880     10.149.777.000
                                                                             ------------------ ------------------ ------------------
                          Total Bank 57964:                                         26.422.120     10.123.354.880     10.149.777.000
@@ -257,7 +257,7 @@ BANK                    AKUN                  Deskripsi AKUN                    
 E1040                   212191                Utang kepada Pihak Ketiga Lai    (1.047.452.668)       (22.283.395)    (1.069.736.063)
                                                                             ------------------ ------------------ ------------------
                          Total Bank E1040:                                     (1.047.452.668)       (22.283.395)    (1.069.736.063)
-
+
 
 
 
@@ -314,7 +314,7 @@ F0471                   111511                Kas dalam Transito - BUN          
 H0153                   111611                Kas di Bendahara Pengeluaran         57.329.974                  0         57.329.974
                                                                             ------------------ ------------------ ------------------
                          Total Bank H0153:                                         57.329.974                  0         57.329.974
-
+
 K0734                   111511                Kas dalam Transito - BUN              4.200.000                  0          4.200.000
                                                                             ------------------ ------------------ ------------------
                          Total Bank K0734:                                          4.200.000                  0          4.200.000
@@ -322,7 +322,7 @@ K0734                   111511                Kas dalam Transito - BUN          
 KZ023                   111511                Kas dalam Transito - BUN             31.908.000                  0         31.908.000
                                                                             ------------------ ------------------ ------------------
                          Total Bank KZ023:                                         31.908.000                  0         31.908.000
-
+
 
 
 
@@ -379,7 +379,7 @@ M9002                   111611                Kas di Bendahara Pengeluaran      
 M9003                   111611                Kas di Bendahara Pengeluaran        (89.026.800)                 0        (89.026.800)
                         111613                Kas di Bendahara Pengeluaran       (101.137.591)                 0       (101.137.591)
                                                                             ------------------ ------------------ ------------------
-                         Total Bank M9003:                                       (190.164.391)                 0       (190.164.391)
+                         Total Bank M9003:                                       (190.164.391)                 0       (190.164.391)
 
 M9004                   111611                Kas di Bendahara Pengeluaran       (610.870.840)       (30.000.000)      (640.870.840)
                         111613                Kas di Bendahara Pengeluaran       (896.430.402)                 0       (896.430.402)
@@ -387,7 +387,7 @@ M9004                   111611                Kas di Bendahara Pengeluaran      
                         425274                Pendapatan Surat Tanda Coba K                 0            (50.000)           (50.000)
                                                                             ------------------ ------------------ ------------------
                          Total Bank M9004:                                     (1.507.301.242)       (30.000.000)    (1.537.301.242)
-
+
 
 
 
