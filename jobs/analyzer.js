@@ -252,7 +252,7 @@ class Analyzer{
         const djbc = this.profilKppn.djbc.split(',');
         const djpdjbc = [...djp, ...djbc];
 
-        return !djpdjbc.includes(input.satker);
+        return djpdjbc.includes(input.satker);
       }
 
       if(filter.must === 'djpprdjpk'){
