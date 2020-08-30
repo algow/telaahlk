@@ -57,6 +57,12 @@ class Analyzer{
       this.__parser(kdkppn, bulan, file, excelName);
     });
 
+    try {
+      await DownloadModel.deleteMany({kdkppn, bulan});
+    } catch (error) {
+      console.log(error, kdkppn);
+    }
+
     const download = new DownloadModel({
       kdkppn,
       bulan,
