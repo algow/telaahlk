@@ -37,7 +37,7 @@ router.post('/', async (request, response) => {
     ]);
 
     akrualkas = await JawabanAkrualkasModel.aggregate([
-      { $match: {kdkppn: kdkppn} },
+      { $match: {kdkppn: kdkppn, bulan} },
       { $group: {
         _id: {kategori: '$kategori', akun: '$akun'},
         body: {$push: '$$ROOT'}

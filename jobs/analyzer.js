@@ -175,6 +175,7 @@ class Analyzer{
           await JawabanAkrualkasModel.updateOne(
             {
               kdkppn: input.kppn,
+              bulan: input.bulan,
               ledger: 'akrual',
               akun: input.akun
             },
@@ -194,6 +195,7 @@ class Analyzer{
           await JawabanAkrualkasModel.updateOne(
             {
               kdkppn: input.kppn,
+              bulan: input.bulan,
               ledger: 'kas',
               akun: input.akun
             },
