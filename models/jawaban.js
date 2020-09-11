@@ -5,7 +5,11 @@ const JawabanSchema = new Schema({
   kdkppn: String,
   bulan: Number,
   pertanyaan_id: Schema.Types.ObjectId,
-  jawaban: Boolean
+  jawaban: Boolean,
+  left: Number,
+  right: Number,
+  filter: String,
+  sign: String
 });
 
 module.exports = mongoose.model('Jawaban', JawabanSchema);

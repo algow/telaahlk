@@ -21,6 +21,13 @@ const jawabanSeeder = async (kdkppn, bulan) => {
       jawaban: true
     };
 
+    if(pertanyaan.sign){
+      jawaban.filter = 'perbandingan';
+      jawaban.sign = pertanyaan.sign;
+      jawaban.left = 0;
+      jawaban.right = 0;
+    }
+
     jawaban.pertanyaan_id = pertanyaan._id;
     jawabans.push(jawaban);
   });

@@ -9,7 +9,8 @@ const SingleFilterSchema = new Schema({
   filter: String,
   must: String,
   must_not: String,
-  at: String
+  at: String,
+  position: String
 });
 
 module.exports = mongoose.model('SingleFilter', SingleFilterSchema);

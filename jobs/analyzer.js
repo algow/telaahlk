@@ -22,6 +22,7 @@ class Analyzer{
   
     try {
       this.singleFilter = await this.__singeFilter();
+      // console.log(this.singleFilter);
       // await storage.setProccess('yes');
       const queueData = await storage.popQueue();
 
@@ -59,6 +60,13 @@ class Analyzer{
 
     try {
       await DownloadModel.deleteMany({kdkppn, bulan});
+      const perbandingan = await JawabanModel.find({
+        kdkppn,
+        bulan,
+        filter: 'perbandingan'
+      });
+      
+      this.__jawabanPerbandingan(perbandingan);
     } catch (error) {
       console.log(error, kdkppn);
     }
@@ -167,10 +175,28 @@ class Analyzer{
   };
 
   async __akunIsAnalyzee(input) {
+    if(this.singleFilter[input['ledger']]) {
+      this.singleFilter[input['ledger']].forEach(filter => {
+        // Cek akun terlarang
+        const regex = RegExp(filter.akun);
+
+        if(regex.test(input.akun)) {
+          if(filter.filter === 'perbandingan'){
+            this.__updateJawaban(input, filter, null, true);
+          }
+
+          this.__truthyAnalyzer(input, filter).then(res => {
+            if(!res) {
+              this.__updateJawaban(input, filter, res);
+            }
+          });
+        }
+      });
+    }
+
     if(this.akrualkas[input.akun]) {
       if(input.ledger === 'Accrual_SATKER') {
         // console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
-
         try {
           await JawabanAkrualkasModel.updateOne(
             {
@@ -190,7 +216,6 @@ class Analyzer{
 
       if(input.ledger === 'Cash_SATKER') {
         // console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
-
         try {
           await JawabanAkrualkasModel.updateOne(
             {
@@ -207,25 +232,6 @@ class Analyzer{
           console.log(error);
         }
       }      
-    }
-
-    if(this.singleFilter[input['ledger']]) {
-      // console.log(this.singleFilter[input['ledger']]);
-      this.singleFilter[input['ledger']].forEach(filter => {
-        // Cek akun tanpa filter
-        
-
-        // Cek akun terlarang
-        const regex = RegExp(filter.akun);
-
-        if(regex.test(input.akun)) {
-          this.__truthyAnalyzer(input, filter).then(res => {
-            if(!res) {
-              this.__updateJawaban(input, filter, res);
-            }
-          });
-        }
-      });
     }
   };
 
@@ -273,18 +279,66 @@ class Analyzer{
     }
   }
 
-  async __updateJawaban(input, filter, answer) {
+  async __updateJawaban(input, filter, answer, perbandingan=false) {
     try {
-      await JawabanModel.updateOne({
-        kdkppn: input.kppn,
-        bulan: input.bulan,
-        pertanyaan_id: filter.pertanyaan_id
-      },
-        { $set: { jawaban: answer } }
-      );
+      if(perbandingan) {
+        if(filter.position === 'left') {
+          await JawabanModel.updateOne({
+            kdkppn: input.kppn,
+            bulan: input.bulan,
+            pertanyaan_id: filter.pertanyaan_id
+          },
+            { $inc: { left: input.saldo_akhir } }
+          );
+        }
+
+        if(filter.position === 'right') {
+          await JawabanModel.updateOne({
+            kdkppn: input.kppn,
+            bulan: input.bulan,
+            pertanyaan_id: filter.pertanyaan_id
+          },
+            { $inc: { right: input.saldo_akhir } }
+          );
+        }
+      } else {
+        await JawabanModel.updateOne({
+          kdkppn: input.kppn,
+          bulan: input.bulan,
+          pertanyaan_id: filter.pertanyaan_id
+        },
+          { $set: { jawaban: answer } }
+        );  
+      }
     } catch (error) {
       console.log(error);
     }
+  }
+
+  __jawabanPerbandingan(perbandingan) {
+    perbandingan.forEach(async item => {
+      let jawaban;
+
+      if(item.sign === 'greater'){
+        jawaban = item.left >= item.right;
+      }
+
+      if(item.sign === 'equal'){
+        jawaban = item.left === item.right;
+      }
+
+      try {
+        await JawabanModel.updateOne({
+          kdkppn: item.kdkppn,
+          bulan: item.bulan,
+          pertanyaan_id: item.pertanyaan_id
+        }, 
+          { $set: { jawaban: jawaban }
+        });
+      } catch (error) {
+        console.log(error, item.kdkppn);
+      }
+    });
   }
 }
 
