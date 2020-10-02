@@ -177,9 +177,9 @@ class Analyzer{
   async __akunIsAnalyzee(input) {
     if(this.singleFilter[input['ledger']]) {
       this.singleFilter[input['ledger']].forEach(filter => {
+        
         // Cek akun terlarang
         const regex = RegExp(filter.akun);
-
         if(regex.test(input.akun)) {
           if(filter.filter === 'perbandingan'){
             this.__updateJawaban(input, filter, null, true);
@@ -236,6 +236,12 @@ class Analyzer{
   };
 
   async __truthyAnalyzer(input, filter) {
+    if(filter.must_not && filter.must_not === 'suspense') {
+      const regex = /^ZZZ[0-9]{3}/;
+
+      return !regex.test(input[filter['at']]);
+    }
+
     if(filter.must && filter.must === 'zero') {
       return input[filter['at']] === 0;
     }
