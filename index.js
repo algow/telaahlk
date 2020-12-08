@@ -6,7 +6,7 @@ const { eventInit } = require('./redis/event');
 const controllers = require('./controllers/index');
 
 const app = express();
-const port = process.env.PORT || 4000;
+const port = process.env.PORT || 81;
 
 eventInit();
 mongodb();
