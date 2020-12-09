@@ -100,6 +100,7 @@ class Analyzer{
   }
 
   __parser(kdkppn, bulan, filename, excelName) {
+    console.log(filename)
     const KPPN = kdkppn;
     let LEDGER = '';
   
@@ -107,7 +108,11 @@ class Analyzer{
       kppn: '',
       bulan: 0,
       ledger: '',
+      satker_1: '',
       satker: '',
+      akun_1: '',
+      akun_2: '',
+      akun_3: '',
       akun: '',
       deskripsi: '',
       saldo_awal: 0,
@@ -121,6 +126,21 @@ class Analyzer{
     });
     
     const writeStream = fs.createWriteStream('./publics/xls/'+ excelName, {flags: 'a'});
+
+    writeStream.write(
+      "'" + 'KPPN' + '\t' + 
+      'LEDGER' + '\t' + "'" + 
+      'BANK/SATKER 1' + '\t' + "'" + 
+      'BANK/SATKER' + '\t' + "'" + 
+      'AKUN 1' + '\t' + "'" + 
+      'AKUN 2' + '\t' + "'" + 
+      'AKUN 3' + '\t' + "'" + 
+      'AKUN 6' + '\t' + 
+      'DESKRIPSI' + '\t' + 
+      'SALDO AWAL' + '\t' + 
+      'AKTIVITAS' + '\t' + 
+      'SALDO AKHIR' + '\n'
+    );
     
     readInterface.on('line', line => {
       const oneLine = line.split(/\s{2,}/);
@@ -144,11 +164,16 @@ class Analyzer{
         if(/^[0-9]{6}/.test(oneLine[1])){
   
           if(oneLine[0] === ''){
+            schema.satker_1 = schema.satker.substr(0,1);
             schema.satker = schema.satker;
           } else {
+            schema.satker_1 = oneLine[0].substr(0,1);
             schema.satker = oneLine[0];
           }
   
+          schema.akun_1 = oneLine[1].substr(0,1);
+          schema.akun_2 = oneLine[1].substr(0,2);
+          schema.akun_3 = oneLine[1].substr(0,3);
           schema.akun = oneLine[1];
           schema.deskripsi = oneLine[2];
 
@@ -161,7 +186,21 @@ class Analyzer{
           }
           
           this.__akunIsAnalyzee(schema);
-          writeStream.write("'" + schema.kppn + '\t' + schema.ledger + '\t' + "'" + schema.satker + '\t' + "'" + schema.akun + '\t' + schema.deskripsi + '\t' + schema.saldo_awal + '\t' + schema.aktivitas + '\t' + schema.saldo_akhir + '\n');
+
+          writeStream.write(
+            "'" + schema.kppn + '\t' + 
+            schema.ledger + '\t' + "'" + 
+            schema.satker_1 + '\t' + "'" + 
+            schema.satker + '\t' + "'" + 
+            schema.akun_1 + '\t' + "'" + 
+            schema.akun_2 + '\t' + "'" + 
+            schema.akun_3 + '\t' + "'" + 
+            schema.akun + '\t' + 
+            schema.deskripsi + '\t' + 
+            schema.saldo_awal + '\t' + 
+            schema.aktivitas + '\t' + 
+            schema.saldo_akhir + '\n'
+          );
         }
       }
     });
