@@ -12,7 +12,12 @@ class Analyzer{
   constructor(){
     this.singleFilter = [];
     this.akrualkas = [];
-    this.profilKppn = {}
+    this.profilKppn = {
+      djp: '',
+      djbc: '',
+      djppr: '',
+      djpk: ''
+    }
   }
 
   async analyze() {
@@ -31,7 +36,7 @@ class Analyzer{
       analyzeeFiles = queueData.files;
 
       const data = await UserModel.find({kdkppn: kdkppn});
-      
+
       this.profilKppn = {
         djppr: data[0].djppr,
         djpk: data[0].djpk,
@@ -54,8 +59,8 @@ class Analyzer{
   
     const excelName = kdkppn + '_' + timestamp + '.xls';
 
-    analyzeeFiles.forEach(file => {
-      this.__parser(kdkppn, bulan, file, excelName);
+    analyzeeFiles.forEach((file, index) => {
+      this.__parser(index, kdkppn, bulan, file, excelName);
     });
 
     try {
@@ -99,11 +104,10 @@ class Analyzer{
     return singleFilterGrouped;
   }
 
-  __parser(kdkppn, bulan, filename, excelName) {
-    console.log(filename)
+  __parser(index, kdkppn, bulan, filename, excelName) {
     const KPPN = kdkppn;
     let LEDGER = '';
-  
+
     let schema = {
       kppn: '',
       bulan: 0,
@@ -113,6 +117,8 @@ class Analyzer{
       akun_1: '',
       akun_2: '',
       akun_3: '',
+      akun_4: '',
+      akun_5: '',
       akun: '',
       deskripsi: '',
       saldo_awal: 0,
@@ -127,20 +133,24 @@ class Analyzer{
     
     const writeStream = fs.createWriteStream('./publics/xls/'+ excelName, {flags: 'a'});
 
-    writeStream.write(
-      "'" + 'KPPN' + '\t' + 
-      'LEDGER' + '\t' + "'" + 
-      'BANK/SATKER 1' + '\t' + "'" + 
-      'BANK/SATKER' + '\t' + "'" + 
-      'AKUN 1' + '\t' + "'" + 
-      'AKUN 2' + '\t' + "'" + 
-      'AKUN 3' + '\t' + "'" + 
-      'AKUN 6' + '\t' + 
-      'DESKRIPSI' + '\t' + 
-      'SALDO AWAL' + '\t' + 
-      'AKTIVITAS' + '\t' + 
-      'SALDO AKHIR' + '\n'
-    );
+    if(index === 0){
+      writeStream.write(
+        "'" + 'KPPN' + '\t' + 
+        'LEDGER' + '\t' + "'" + 
+        'BANK/SATKER 1' + '\t' + "'" + 
+        'BANK/SATKER' + '\t' + "'" + 
+        'AKUN 1' + '\t' + "'" + 
+        'AKUN 2' + '\t' + "'" + 
+        'AKUN 3' + '\t' + "'" + 
+        'AKUN 4' + '\t' + "'" + 
+        'AKUN 5' + '\t' + "'" + 
+        'AKUN 6' + '\t' + 
+        'DESKRIPSI' + '\t' + 
+        'SALDO AWAL' + '\t' + 
+        'AKTIVITAS' + '\t' + 
+        'SALDO AKHIR' + '\n'
+      );  
+    }
     
     readInterface.on('line', line => {
       const oneLine = line.split(/\s{2,}/);
@@ -174,6 +184,8 @@ class Analyzer{
           schema.akun_1 = oneLine[1].substr(0,1);
           schema.akun_2 = oneLine[1].substr(0,2);
           schema.akun_3 = oneLine[1].substr(0,3);
+          schema.akun_4 = oneLine[1].substr(0,4);
+          schema.akun_5 = oneLine[1].substr(0,5);
           schema.akun = oneLine[1];
           schema.deskripsi = oneLine[2];
 
@@ -195,6 +207,8 @@ class Analyzer{
             schema.akun_1 + '\t' + "'" + 
             schema.akun_2 + '\t' + "'" + 
             schema.akun_3 + '\t' + "'" + 
+            schema.akun_4 + '\t' + "'" + 
+            schema.akun_5 + '\t' + "'" + 
             schema.akun + '\t' + 
             schema.deskripsi + '\t' + 
             schema.saldo_awal + '\t' + 
@@ -216,7 +230,7 @@ class Analyzer{
   async __akunIsAnalyzee(input) {
     if(this.singleFilter[input['ledger']]) {
       this.singleFilter[input['ledger']].forEach(filter => {
-        
+
         // Cek akun terlarang
         const regex = RegExp(filter.akun);
         if(regex.test(input.akun)) {
@@ -305,11 +319,20 @@ class Analyzer{
       return !regex.test(input[filter['at']]);
     }
 
-    if(filter.filter && filter.filter === 'satker') {     
+    if(filter.filter && filter.filter === 'satker') {
       if(filter.must === 'djpdjbc'){
-        const djp = this.profilKppn.djp.split(',');
-        const djbc = this.profilKppn.djbc.split(',');
-        const djpdjbc = [...djp, ...djbc];
+        let djp = '';
+        let djbc = '';
+        let djpdjbc = [];
+        
+        try {
+          djp = this.profilKppn.djp.split(',');
+          djbc = this.profilKppn.djbc.split(',');
+        } catch (error) {
+          console.log('Empty DJP/DJBC filter');
+        }
+
+        djpdjbc = [...djp, ...djbc];
 
         return djpdjbc.includes(input.satker);
       }

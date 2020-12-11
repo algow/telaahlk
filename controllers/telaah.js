@@ -58,10 +58,21 @@ router.post('/', async (request, response) => {
 
   const message = {
     message: 'success',
-    segmen_satker: segmenSatker,
+    segmen_satker: {
+      Accrual_SATKER: '',
+      Cash_SATKER: ''
+    },
     akrualkas: akrualkas
   }
 
+  segmenSatker.forEach(element => {
+    if(element._id === 'Accrual_SATKER'){
+      message.segmen_satker.Accrual_SATKER = element.body;
+    } else {
+      message.segmen_satker.Cash_SATKER = element.body;
+    }
+  })
+  
   try {
     message.file = excelFile[0].file;
   } catch (error) {
