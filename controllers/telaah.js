@@ -60,16 +60,19 @@ router.post('/', async (request, response) => {
     message: 'success',
     segmen_satker: {
       Accrual_SATKER: '',
-      Cash_SATKER: ''
+      Cash_SATKER: '',
+      Cash_BANK: ''
     },
     akrualkas: akrualkas
   }
 
   segmenSatker.forEach(element => {
-    if(element._id === 'Accrual_SATKER'){
+    if(element._id === 'Accrual_SATKER') {
       message.segmen_satker.Accrual_SATKER = element.body;
-    } else {
+    } else if(element._id === 'Cash_SATKER') {
       message.segmen_satker.Cash_SATKER = element.body;
+    } else {
+      message.segmen_satker.Cash_BANK = element.body;
     }
   })
   

@@ -67,7 +67,8 @@ const akunSpliter = (akuns, pertanyaanId, input, position=undefined) => {
       must_not: input.must_not, 
       at: input.at, 
       ledger: input.ledger,
-      position
+      position,
+      bank: input.bank
     });
   });
 

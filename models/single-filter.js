@@ -10,7 +10,8 @@ const SingleFilterSchema = new Schema({
   must: String,
   must_not: String,
   at: String,
-  position: String
+  position: String,
+  bank: String
 });
 
 module.exports = mongoose.model('SingleFilter', SingleFilterSchema);

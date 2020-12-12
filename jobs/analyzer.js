@@ -88,7 +88,8 @@ class Analyzer{
     let singleFilter = [];
     let singleFilterGrouped = {
       Accrual_SATKER: [],
-      Cash_SATKER: []
+      Cash_SATKER: [],
+      Cash_BANK: []
     };
 
     try {
@@ -158,6 +159,10 @@ class Analyzer{
       if(Array.isArray(oneLine) && oneLine.length > 1) {
         schema.kppn = KPPN;
         schema.bulan = bulan;
+
+        // if(oneLine[1] === '425273'){
+        //   console.log(oneLine);
+        // }
   
         if(LEDGER.split('_').length < 2) {
           if(oneLine[1] === 'Buku Besar:') {
@@ -289,6 +294,27 @@ class Analyzer{
   };
 
   async __truthyAnalyzer(input, filter) {
+    if(filter.bank) {
+
+      const segmentBanks = filter['bank'].split(',');
+      // Apakah segmen bank input termasuk dalam segmen bank yang difilter?
+      if(segmentBanks.includes(input['satker'].substr(0,1))){
+        // Jika saldo akhir harus positif
+        if(filter.must === 'positive'){
+          return input[filter['at']] >= 0;
+        }
+
+        if(filter.must_not === 'exist') {
+          return false;
+        }
+
+        const mustAkun = filter['must'].split(',');
+        return mustAkun.includes(input['akun']);
+      }
+
+      return true;
+    }
+
     if(filter.must_not && filter.must_not === 'suspense') {
       const regex = /^ZZZ[0-9]{3}/;
 
