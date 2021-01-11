@@ -165,11 +165,11 @@ class Analyzer{
         // }
   
         if(LEDGER.split('_').length < 2) {
-          if(oneLine[1] === 'Buku Besar:') {
+          if(oneLine[1] === 'Buku Besar:' || oneLine[1] === 'Ledger:') {
             LEDGER += oneLine[2].split(' ')[1];
           }
       
-          if(oneLine[2] === 'Deskripsi AKUN') {
+          if(oneLine[2] === 'Deskripsi AKUN' || oneLine[2] === 'AKUN Description') {
             LEDGER += '_' + oneLine[0];
           }
       
@@ -200,7 +200,22 @@ class Analyzer{
             schema.saldo_akhir = (isNaN(parseInt(oneLine[5].split('.').join(''))) ? parseInt(oneLine[5].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[5].split('.').join('')));  
           } catch (error) {
             console.log(error, KPPN);
+            console.log(oneLine, LEDGER);
           }
+
+          // try {
+          //   schema.saldo_akhir = (isNaN(parseInt(oneLine[5].split('.').join(''))) ? parseInt(oneLine[5].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[5].split('.').join('')));  
+          // } catch (error) {
+          //   // console.log(error, KPPN);
+          //   // console.log(oneLine, LEDGER, 'SALDO AKHIR', oneLine[3]);
+
+          //   let newOneLine = oneLine[3].split(/\s{1,}/);
+          //   newOneLine[2] = oneLine[4];
+
+          //   schema.saldo_awal = (isNaN(parseInt(newOneLine[0].split('.').join(''))) ? parseInt(newOneLine[0].split('.').join('').slice(1, -1)) * -1 : parseInt(newOneLine[0].split('.').join('')));
+          //   schema.aktivitas = (isNaN(parseInt(newOneLine[1].split('.').join(''))) ? parseInt(newOneLine[1].split('.').join('').slice(1, -1)) * -1 : parseInt(newOneLine[1].split('.').join('')));
+          //   schema.saldo_akhir = (isNaN(parseInt(newOneLine[2].split('.').join(''))) ? parseInt(newOneLine[2].split('.').join('').slice(1, -1)) * -1 : parseInt(newOneLine[2].split('.').join('')));  
+          // }
           
           this.__akunIsAnalyzee(schema);
 

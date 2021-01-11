@@ -46,7 +46,12 @@ router.post('/', async (request, response) => {
 });
 
 router.put('/', async (request, response) => {
-  const { kdkppn, nama, djp, djbc, djppr, djpk } = request.body;
+  let { kdkppn, nama, djp, djbc, djppr, djpk } = request.body;
+
+  djp = djp.replace(/\s/g,'');
+  djbc = djbc.replace(/\s/g,'');
+  djppr = djppr.replace(/\s/g,'');
+  djpk = djpk.replace(/\s/g,'');
 
   try {
     await User.updateOne({
