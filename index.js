@@ -3,6 +3,7 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const mongodb = require('./models/mongoose');
 const { eventInit } = require('./redis/event');
+const filterCaching = require('./jobs/cache-filter');
 const controllers = require('./controllers/index');
 
 const app = express();
@@ -10,6 +11,9 @@ const port = process.env.PORT || 81;
 
 eventInit();
 mongodb();
+
+// TODO: Fetch filter from mongodb then store as redis hash
+filterCaching();
 
 app.use(cors());
 app.options('*', cors());

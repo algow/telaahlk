@@ -159,10 +159,6 @@ class Analyzer{
       if(Array.isArray(oneLine) && oneLine.length > 1) {
         schema.kppn = KPPN;
         schema.bulan = bulan;
-
-        // if(oneLine[1] === '425273'){
-        //   console.log(oneLine);
-        // }
   
         if(LEDGER.split('_').length < 2) {
           if(oneLine[1] === 'Buku Besar:' || oneLine[1] === 'Ledger:') {

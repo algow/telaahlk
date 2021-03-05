@@ -2,11 +2,12 @@ const redisClient = require('./index');
 
 const QUEUE = 'queue';
 const PROCCESS = 'proccess';
+const FILTER = 'filters';
 
 exports.getQueue = () => {
   return redisClient.lrange(QUEUE, 0, -1).then(res => {
     return res.map(JSON.parse);
-  })
+  });
 }
 
 exports.popQueue = () => {
@@ -31,4 +32,16 @@ exports.setProccess = value => {
   return redisClient.set(PROCCESS, value).then(res => {
     return res;
   });
+}
+
+exports.setFilterData = value => {
+  return redisClient.set(FILTER, JSON.stringify(value)).then(res => {
+    return res;
+  });
+}
+
+exports.getFilterData = ledger => {
+  return redisClient.get(FILTER, ledger).then(res => {
+    return res;
+  })
 }

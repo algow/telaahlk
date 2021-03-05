@@ -2,6 +2,7 @@ const redisClient = require('./index');
 const sub = require('./subscriber');
 const storage = require('./storage');
 const Analyzer = require('../jobs/analyzer');
+// const Analyze = require('../jobs/analyze');
 
 const ANALYZER = 'analyzer';
 
@@ -41,6 +42,10 @@ exports.pub = pub;
 const asyncAnalyzer = async () => {
   await storage.setProccess('yes');
   await Analyzer.analyze();
+  // const queueData = await storage.popQueue();
+  // const Analyzer = new Analyze(queueData);
+  // Analyzer.doAnalyze();
+  // await analyze(queueData);
   await storage.setProccess('no');
   const queueNum = await storage.getQueue();
 
