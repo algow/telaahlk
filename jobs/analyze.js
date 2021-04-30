@@ -14,37 +14,38 @@ class Analyzer {
 
   
   doAnalyze() {
-    this.#queueData.forEach(queue => {
+    for (const queue of this.#queueData) {
 
+    }
+
+    this.#queueData.forEach(queue => {
       const readInterface = readline.createInterface({
         input: fs.createReadStream('./publics/text/' + queue.filename),
         console: false
       });
-    
+
       readInterface.on('line', line => {
         const oneLineArr = line.split(/\s{2,}/);
 
         // If ledger name haven't been found
-        if(this.#ledgerName.split('_').length < 2) {
+        if(queue.ledger.split('_').length < 2) {
           this.#getLedgerName(oneLineArr, queue);
         }
-
         // const parsedRow = parseTxtLine(line, queue);
         // writeLineToExcel(parsedRow);
       });
+      console.log(this.#queueData);
     });
   }
 
 
   #getLedgerName(rowData, queueData) {
     if(rowData[1] === 'Buku Besar:' || rowData[1] === 'Ledger:') {
-      this.#ledgerName += rowData[2].split(' ')[1];
+      this.#queueData[queueData['index']].ledger += rowData[2].split(' ')[1];
     }
 
     if(rowData[2] === 'Deskripsi AKUN' || rowData[2] === 'AKUN Description') {
-      this.#ledgerName += '_' + rowData[0];
-      this.#queueData[queueData.index]['ledger'] = this.#ledgerName;
-      this.#ledgerName = '';
+      this.#queueData[queueData['index']].ledger += '_' + rowData[0];
     }
   }
 

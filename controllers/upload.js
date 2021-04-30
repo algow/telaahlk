@@ -7,14 +7,18 @@ const router = express.Router();
 const upload = multer({ dest: './publics/text/' });
 
 router.post('/', upload.any(), async (request, response) => {
-  let queueData = {
-    kdkppn: request.body.kode,
-    bulan: request.body.bulan,
-    files: []
-  };
+  let queueData = [];
 
-  request.files.forEach(file => {
-    queueData.files.push(file.filename);
+  request.files.forEach((file, index) => {
+    let queue = {
+      index: index,
+      kdkppn: request.body.kode,
+      bulan: request.body.bulan,
+      filename: file.filename,
+      ledger: ''
+    };
+
+    queueData.push(queue);
   });
 
   try {

@@ -6,6 +6,7 @@ const SingleFilterSchema = new Schema({
   ledger: String,
   nomor: Number,
   akun: String,
+  regex: String,
   filter: String,
   must: String,
   must_not: String,

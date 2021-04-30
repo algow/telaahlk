@@ -21,67 +21,67 @@ class Analyzer{
   }
 
   async analyze() {
-    let kdkppn = '';
-    let bulan = 0;
-    let analyzeeFiles = [];
+    // let kdkppn = '';
+    // let bulan = 0;
+    // let analyzeeFiles = [];
   
     try {
-      this.singleFilter = await this.__singeFilter();
+      // this.singleFilter = await this.__singeFilter();
       // console.log(this.singleFilter);
       // await storage.setProccess('yes');
-      const queueData = await storage.popQueue();
+      // const queueData = await storage.popQueue();
 
-      kdkppn = queueData.kdkppn;
-      bulan = queueData.bulan;
-      analyzeeFiles = queueData.files;
+      // kdkppn = queueData.kdkppn;
+      // bulan = queueData.bulan;
+      // analyzeeFiles = queueData.files;
 
-      const data = await UserModel.find({kdkppn: kdkppn});
+      // const data = await UserModel.find({kdkppn: kdkppn});
 
-      this.profilKppn = {
-        djppr: data[0].djppr,
-        djpk: data[0].djpk,
-        djp: data[0].djp,
-        djbc: data[0].djbc
-      }
+      // this.profilKppn = {
+      //   djppr: data[0].djppr,
+      //   djpk: data[0].djpk,
+      //   djp: data[0].djp,
+      //   djbc: data[0].djbc
+      // }
     } catch (error) {
       console.log(error);
     }
 
     try {
-      await jawabanSeeder(kdkppn, bulan);
+      // await jawabanSeeder(kdkppn, bulan);
       this.akrualkas = await accrualVsCashSeeder(kdkppn, bulan);
     } catch (error) {
       console.log(error);
     }
 
     console.log('seeding sukses');
-    const timestamp = Date.now();
+    // const timestamp = Date.now();
   
-    const excelName = kdkppn + '_' + timestamp + '.xls';
+    // const excelName = kdkppn + '_' + timestamp + '.xls';
 
-    analyzeeFiles.forEach((file, index) => {
-      this.__parser(index, kdkppn, bulan, file, excelName);
-    });
+    // analyzeeFiles.forEach((file, index) => {
+    //   this.__parser(index, kdkppn, bulan, file, excelName);
+    // });
 
     try {
-      await DownloadModel.deleteMany({kdkppn, bulan});
-      const perbandingan = await JawabanModel.find({
-        kdkppn,
-        bulan,
-        filter: 'perbandingan'
-      });
+      // await DownloadModel.deleteMany({kdkppn, bulan});
+      // const perbandingan = await JawabanModel.find({
+      //   kdkppn,
+      //   bulan,
+      //   filter: 'perbandingan'
+      // });
       
-      this.__jawabanPerbandingan(perbandingan);
+      // this.__jawabanPerbandingan(perbandingan);
     } catch (error) {
       console.log(error, kdkppn);
     }
 
-    const download = new DownloadModel({
-      kdkppn,
-      bulan,
-      file: excelName
-    });
-    download.save();
+    // const download = new DownloadModel({
+    //   kdkppn,
+    //   bulan,
+    //   file: excelName
+    // });
+    // download.save();
   };
   
   async __singeFilter() {
@@ -244,176 +244,175 @@ class Analyzer{
   };
 
   async __akunIsAnalyzee(input) {
-    if(this.singleFilter[input['ledger']]) {
-      this.singleFilter[input['ledger']].forEach(filter => {
+    // if(this.singleFilter[input['ledger']]) {
+    //   this.singleFilter[input['ledger']].forEach(filter => {
 
-        // Cek akun terlarang
-        const regex = RegExp(filter.akun);
-        if(regex.test(input.akun)) {
-          if(filter.filter === 'perbandingan'){
-            this.__updateJawaban(input, filter, null, true);
-          }
+    //     // Cek akun terlarang
+    //     const regex = RegExp(filter.akun);
+    //     if(regex.test(input.akun)) {
+    //       if(filter.filter === 'perbandingan'){
+    //         this.__updateJawaban(input, filter, null, true);
+    //       }
 
-          this.__truthyAnalyzer(input, filter).then(res => {
-            if(!res) {
-              this.__updateJawaban(input, filter, res);
-            }
-          });
-        }
-      });
-    }
+    //       this.__truthyAnalyzer(input, filter).then(res => {
+    //         if(!res) {
+    //           this.__updateJawaban(input, filter, res);
+    //         }
+    //       });
+    //     }
+    //   });
+    // }
 
     if(this.akrualkas[input.akun]) {
       if(input.ledger === 'Accrual_SATKER') {
         // console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
-        try {
-          await JawabanAkrualkasModel.updateOne(
-            {
-              kdkppn: input.kppn,
-              bulan: input.bulan,
-              ledger: 'akrual',
-              akun: input.akun
-            },
-            {
-              $inc: { nilai: input.saldo_akhir }
-            }
-          );
-        } catch (error) {
-          console.log(error);
-        }
-      }
+      //   try {
+      //     await JawabanAkrualkasModel.updateOne(
+      //       {
+      //         kdkppn: input.kppn,
+      //         bulan: input.bulan,
+      //         ledger: 'akrual',
+      //         akun: input.akun
+      //       },
+      //       {
+      //         $inc: { nilai: input.saldo_akhir }
+      //       }
+      //     );
+      //   } catch (error) {
+      //     console.log(error);
+      //   }
+      // }
 
-      if(input.ledger === 'Cash_SATKER') {
-        // console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
-        try {
-          await JawabanAkrualkasModel.updateOne(
-            {
-              kdkppn: input.kppn,
-              bulan: input.bulan,
-              ledger: 'kas',
-              akun: input.akun
-            },
-            {
-              $inc: { nilai: input.saldo_akhir }
-            }
-          );            
-        } catch (error) {
-          console.log(error);
-        }
+      // if(input.ledger === 'Cash_SATKER') {
+      //   // console.log(input.kppn, this.akrualkas[input.akun], input.akun, input.saldo_akhir);
+      //   try {
+      //     await JawabanAkrualkasModel.updateOne(
+      //       {
+      //         kdkppn: input.kppn,
+      //         bulan: input.bulan,
+      //         ledger: 'kas',
+      //         akun: input.akun
+      //       },
+      //       {
+      //         $inc: { nilai: input.saldo_akhir }
+      //       }
+      //     );            
+      //   } catch (error) {
+      //     console.log(error);
+      //   }
       }      
     }
   };
 
   async __truthyAnalyzer(input, filter) {
-    if(filter.bank) {
+    // if(filter.bank) {
+    //   const segmentBanks = filter['bank'].split(',');
+    //   // Apakah segmen bank input termasuk dalam segmen bank yang difilter?
+    //   if(segmentBanks.includes(input['satker'].substr(0,1))){
+    //     // Jika saldo akhir harus positif
+    //     if(filter.must === 'positive'){
+    //       return input[filter['at']] >= 0;
+    //     }
 
-      const segmentBanks = filter['bank'].split(',');
-      // Apakah segmen bank input termasuk dalam segmen bank yang difilter?
-      if(segmentBanks.includes(input['satker'].substr(0,1))){
-        // Jika saldo akhir harus positif
-        if(filter.must === 'positive'){
-          return input[filter['at']] >= 0;
-        }
+    //     if(filter.must_not === 'exist') {
+    //       return false;
+    //     }
 
-        if(filter.must_not === 'exist') {
-          return false;
-        }
+    //     const mustAkun = filter['must'].split(',');
+    //     return mustAkun.includes(input['akun']);
+    //   }
 
-        const mustAkun = filter['must'].split(',');
-        return mustAkun.includes(input['akun']);
-      }
+    //   return true;
+    // }
 
-      return true;
-    }
+    // if(filter.must_not && filter.must_not === 'suspense') {
+    //   const regex = /^ZZZ[0-9]{3}/;
 
-    if(filter.must_not && filter.must_not === 'suspense') {
-      const regex = /^ZZZ[0-9]{3}/;
+    //   return !regex.test(input[filter['at']]);
+    // }
 
-      return !regex.test(input[filter['at']]);
-    }
+    // if(filter.must && filter.must === 'zero') {
+    //   return input[filter['at']] === 0;
+    // }
 
-    if(filter.must && filter.must === 'zero') {
-      return input[filter['at']] === 0;
-    }
+    // if(filter.must && filter.must === 'positive') {
+    //   return input[filter['at']] >= 0;
+    // }
 
-    if(filter.must && filter.must === 'positive') {
-      return input[filter['at']] >= 0;
-    }
+    // if(filter.must && filter.must === 'negative') {
+    //   return input[filter['at']] <= 0;
+    // }
 
-    if(filter.must && filter.must === 'negative') {
-      return input[filter['at']] <= 0;
-    }
+    // if(filter.must && filter.must === 'kbun') {
+    //   const regex = /999[0-9]{3}/;
 
-    if(filter.must && filter.must === 'kbun') {
-      const regex = /999[0-9]{3}/;
+    //   return regex.test(input[filter['at']]);
+    // }
 
-      return regex.test(input[filter['at']]);
-    }
+    // if(filter.must_not && filter.must_not === 'kbun') {
+    //   const regex = /999[0-9]{3}/;
 
-    if(filter.must_not && filter.must_not === 'kbun') {
-      const regex = /999[0-9]{3}/;
+    //   return !regex.test(input[filter['at']]);
+    // }
 
-      return !regex.test(input[filter['at']]);
-    }
-
-    if(filter.filter && filter.filter === 'satker') {
-      if(filter.must === 'djpdjbc'){
-        let djp = '';
-        let djbc = '';
-        let djpdjbc = [];
+    // if(filter.filter && filter.filter === 'satker') {
+    //   if(filter.must === 'djpdjbc'){
+    //     let djp = '';
+    //     let djbc = '';
+    //     let djpdjbc = [];
         
-        try {
-          djp = this.profilKppn.djp.split(',');
-          djbc = this.profilKppn.djbc.split(',');
-        } catch (error) {
-          console.log('Empty DJP/DJBC filter');
-        }
+    //     try {
+    //       djp = this.profilKppn.djp.split(',');
+    //       djbc = this.profilKppn.djbc.split(',');
+    //     } catch (error) {
+    //       console.log('Empty DJP/DJBC filter');
+    //     }
 
-        djpdjbc = [...djp, ...djbc];
+    //     djpdjbc = [...djp, ...djbc];
 
-        return djpdjbc.includes(input.satker);
-      }
+    //     return djpdjbc.includes(input.satker);
+    //   }
 
-      if(filter.must === 'djpprdjpk'){
-        return input['satker'] === this.profilKppn.djppr || input['satker'] === this.profilKppn.djpk;
-      }
+    //   if(filter.must === 'djpprdjpk'){
+    //     return input['satker'] === this.profilKppn.djppr || input['satker'] === this.profilKppn.djpk;
+    //   }
       
-      if(filter.must === 'djppr'){
-        return input['satker'] === this.profilKppn.djppr;
-      }
-    }
+    //   if(filter.must === 'djppr'){
+    //     return input['satker'] === this.profilKppn.djppr;
+    //   }
+    // }
   }
 
   async __updateJawaban(input, filter, answer, perbandingan=false) {
     try {
       if(perbandingan) {
-        if(filter.position === 'left') {
-          await JawabanModel.updateOne({
-            kdkppn: input.kppn,
-            bulan: input.bulan,
-            pertanyaan_id: filter.pertanyaan_id
-          },
-            { $inc: { left: input.saldo_akhir } }
-          );
-        }
+        // if(filter.position === 'left') {
+        //   await JawabanModel.updateOne({
+        //     kdkppn: input.kppn,
+        //     bulan: input.bulan,
+        //     pertanyaan_id: filter.pertanyaan_id
+        //   },
+        //     { $inc: { left: input.saldo_akhir } }
+        //   );
+        // }
 
-        if(filter.position === 'right') {
-          await JawabanModel.updateOne({
-            kdkppn: input.kppn,
-            bulan: input.bulan,
-            pertanyaan_id: filter.pertanyaan_id
-          },
-            { $inc: { right: input.saldo_akhir } }
-          );
-        }
+        // if(filter.position === 'right') {
+        //   await JawabanModel.updateOne({
+        //     kdkppn: input.kppn,
+        //     bulan: input.bulan,
+        //     pertanyaan_id: filter.pertanyaan_id
+        //   },
+        //     { $inc: { right: input.saldo_akhir } }
+        //   );
+        // }
       } else {
-        await JawabanModel.updateOne({
-          kdkppn: input.kppn,
-          bulan: input.bulan,
-          pertanyaan_id: filter.pertanyaan_id
-        },
-          { $set: { jawaban: answer } }
-        );  
+        // await JawabanModel.updateOne({
+        //   kdkppn: input.kppn,
+        //   bulan: input.bulan,
+        //   pertanyaan_id: filter.pertanyaan_id
+        // },
+        //   { $set: { jawaban: answer } }
+        // );  
       }
     } catch (error) {
       console.log(error);
@@ -421,29 +420,29 @@ class Analyzer{
   }
 
   __jawabanPerbandingan(perbandingan) {
-    perbandingan.forEach(async item => {
-      let jawaban;
+  //   perbandingan.forEach(async item => {
+  //     let jawaban;
 
-      if(item.sign === 'greater'){
-        jawaban = item.left >= item.right;
-      }
+  //     if(item.sign === 'greater'){
+  //       jawaban = item.left >= item.right;
+  //     }
 
-      if(item.sign === 'equal'){
-        jawaban = item.left === item.right;
-      }
+  //     if(item.sign === 'equal'){
+  //       jawaban = item.left === item.right;
+  //     }
 
-      try {
-        await JawabanModel.updateOne({
-          kdkppn: item.kdkppn,
-          bulan: item.bulan,
-          pertanyaan_id: item.pertanyaan_id
-        }, 
-          { $set: { jawaban: jawaban }
-        });
-      } catch (error) {
-        console.log(error, item.kdkppn);
-      }
-    });
+  //     try {
+  //       await JawabanModel.updateOne({
+  //         kdkppn: item.kdkppn,
+  //         bulan: item.bulan,
+  //         pertanyaan_id: item.pertanyaan_id
+  //       }, 
+  //         { $set: { jawaban: jawaban }
+  //       });
+  //     } catch (error) {
+  //       console.log(error, item.kdkppn);
+  //     }
+  //   });
   }
 }
 

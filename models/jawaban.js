@@ -9,7 +9,8 @@ const JawabanSchema = new Schema({
   left: Number,
   right: Number,
   filter: String,
-  sign: String
+  sign: String,
+  kesalahan: Array
 });
 
 module.exports = mongoose.model('Jawaban', JawabanSchema);

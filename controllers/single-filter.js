@@ -56,11 +56,13 @@ const akunSpliter = (akuns, pertanyaanId, input, position=undefined) => {
       }
     }
 
-    let regex = `^${akun.slice(0, 6-countX)}[0-9]{${countX}}`;
+    const prefix = akun.slice(0, 6-countX);
+    const regex = `^${prefix}[0-9]{${countX}}`;
 
     singleFilterData.push({ 
-      pertanyaan_id: pertanyaanId, 
-      akun: regex, 
+      pertanyaan_id: pertanyaanId,
+      akun: prefix,
+      regex: regex, 
       nomor: input.nomor, 
       filter: input.filter, 
       must: input.must, 

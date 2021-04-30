@@ -3,6 +3,7 @@ const redisClient = require('./index');
 const QUEUE = 'queue';
 const PROCCESS = 'proccess';
 const FILTER = 'filters';
+const AKRUALKAS = 'akrualkas';
 
 exports.getQueue = () => {
   return redisClient.lrange(QUEUE, 0, -1).then(res => {
@@ -40,8 +41,20 @@ exports.setFilterData = value => {
   });
 }
 
-exports.getFilterData = ledger => {
-  return redisClient.get(FILTER, ledger).then(res => {
+exports.getFilterData = () => {
+  return redisClient.get(FILTER).then(res => {
+    return JSON.parse(res);
+  });
+}
+
+exports.setFilterAkrualKas = value => {
+  return redisClient.set(AKRUALKAS, JSON.stringify(value)).then(res => {
     return res;
-  })
+  });
+}
+
+exports.getFilterAkrualKas = () => {
+  return redisClient.get(AKRUALKAS).then(res => {
+    return JSON.parse(res);
+  });
 }
