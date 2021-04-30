@@ -4,7 +4,8 @@ const Schema = mongoose.Schema;
 const DownloadSchema = new Schema({
   kdkppn: String,
   bulan: Number,
-  file: String
+  file: String,
+  timestamp: String
 });
 
 module.exports = mongoose.model('Download', DownloadSchema);

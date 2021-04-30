@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const dbConnection = () => {
   mongoose.connect(
-    'mongodb://localhost:27017/rekon_dev', 
+    'mongodb://localhost:27017/rekon', 
     { 
       useNewUrlParser: true,
       useUnifiedTopology: true

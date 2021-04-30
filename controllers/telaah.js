@@ -78,6 +78,7 @@ router.post('/', async (request, response) => {
   
   try {
     message.file = excelFile[0].file;
+    message.timestamp = excelFile[0].timestamp;
   } catch (error) {
     return response.status(404).send({
       msg: 'tidak ditemukan'
