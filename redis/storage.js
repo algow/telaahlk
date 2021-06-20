@@ -4,6 +4,7 @@ const QUEUE = 'queue';
 const PROCCESS = 'proccess';
 const FILTER = 'filters';
 const AKRUALKAS = 'akrualkas';
+const MUTASI = 'mutasi';
 
 exports.getQueue = () => {
   return redisClient.lrange(QUEUE, 0, -1).then(res => {
@@ -55,6 +56,18 @@ exports.setFilterAkrualKas = value => {
 
 exports.getFilterAkrualKas = () => {
   return redisClient.get(AKRUALKAS).then(res => {
+    return JSON.parse(res);
+  });
+}
+
+exports.setFilterMutasi = value => {
+  return redisClient.set(MUTASI, JSON.stringify(value)).then(res => {
+    return res;
+  });
+}
+
+exports.getFilterMutasi = () => {
+  return redisClient.get(MUTASI).then(res => {
     return JSON.parse(res);
   });
 }

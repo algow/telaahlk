@@ -38,7 +38,7 @@ const parse = (queueData, lineArr, satker) => {
       schema.saldo_akhir = parseNumber(lineArr[5]);
     } catch (error) {
       // Error logging
-      console.log(queueData.kdkppn);
+      console.log(queueData);
       console.log(lineArr);
     }
 

@@ -1,6 +1,7 @@
 const express = require('express');
 const JawabanModel = require('../models/jawaban');
 const JawabanAkrualkasModel = require('../models/jawaban-akrualkas');
+const JawabanMutasiModel = require('../models/jawaban-mutasi');
 const DownloadModel = require('../models/download');
 // const {accrualVsCashSeeder} = require('../models/seeder');
 
@@ -13,6 +14,7 @@ router.post('/', async (request, response) => {
   let excelFile = '';
   let segmenSatker = [];
   let akrualkas = [];
+  let mutasi = [];
 
   try {
     excelFile = await DownloadModel.find({kdkppn: kdkppn, bulan: bulan});
@@ -50,6 +52,21 @@ router.post('/', async (request, response) => {
         }}
       }}
     ]);
+
+    mutasi = await JawabanMutasiModel.aggregate([
+      { $match: {kdkppn: kdkppn, bulan} },
+      { $group: {
+        _id: {kategori: '$kategori', akun: '$akun'},
+        body: {$push: '$$ROOT'}
+      }},
+      { $group: {
+        _id: '$_id.kategori',
+        body: {$push: {
+          akun: '$_id.akun',
+          body: '$body'
+        }}
+      }}
+    ]);
   } catch (error) {
     return response.status(500).send({
       msg: 'something went wrong'
@@ -63,7 +80,8 @@ router.post('/', async (request, response) => {
       Cash_SATKER: '',
       Cash_BANK: ''
     },
-    akrualkas: akrualkas
+    akrualkas: akrualkas,
+    mutasi: mutasi
   }
 
   segmenSatker.forEach(element => {

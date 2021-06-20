@@ -36,7 +36,7 @@ const testJawabanPerbandingan = async (kdkppn, bulan) => {
 
 const updateDownload = async (kdkppn, bulan, filename) => {
   const timestamp = new Date().
-    toLocaleString('id-ID', { timeZone: 'Asia/Jakarta' })
+    toLocaleString('en-GB', { timeZone: 'Asia/Jakarta' })
 
   try {
     await DownloadModel.deleteMany({kdkppn, bulan});

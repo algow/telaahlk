@@ -5,8 +5,9 @@ const { writeExcelHeader, writeExcel } = require('./write-excel');
 const { getFilterData } = require('../../redis/storage');
 const TrieHelper = require('../caching/trie-helpers');
 const telaah = require('../telaah');
-const { jawabanSeeder, accrualVsCashSeeder } = require('../../models/seeder');
+const { jawabanSeeder, accrualVsCashSeeder, mutasiAkrualKas } = require('../../models/seeder');
 const { finishingStuffs } = require('../telaah/utils');
+
 
 class StreamProcessing {
   constructor(queue) {
@@ -21,9 +22,9 @@ class StreamProcessing {
     // Fetch filters trie from redis
     this.__filters = await getFilterData();
 
-    // TODO seeding tabel jawabans dan jawabanakrualkas
     await jawabanSeeder(this.__kdkppn, this.__bulan);
     await accrualVsCashSeeder(this.__kdkppn, this.__bulan);
+    await mutasiAkrualKas(this.__kdkppn, this.__bulan);
   }
 
   async run(i=0) {
@@ -58,7 +59,11 @@ class StreamProcessing {
         writeExcel(writeLine, parsedRow);
 
         // find analyzee
-        const filterExist = filterTrie.getFilter(parsedRow.akun, this.__queue[i].ledger);
+        let filterExist = [];
+
+        if(this.__queue[i].ledger !== 'Accrual_BANK') {
+          filterExist = filterTrie.getFilter(parsedRow.akun, this.__queue[i].ledger);
+        }
 
         if(filterExist.length > 0) {
           telaah(parsedRow, filterExist);

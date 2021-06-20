@@ -34,7 +34,7 @@ class Analyzer {
         // const parsedRow = parseTxtLine(line, queue);
         // writeLineToExcel(parsedRow);
       });
-      console.log(this.#queueData);
+      // console.log(this.#queueData);
     });
   }
 

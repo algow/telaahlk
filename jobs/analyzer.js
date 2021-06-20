@@ -196,7 +196,7 @@ class Analyzer{
             schema.saldo_akhir = (isNaN(parseInt(oneLine[5].split('.').join(''))) ? parseInt(oneLine[5].split('.').join('').slice(1, -1)) * -1 : parseInt(oneLine[5].split('.').join('')));  
           } catch (error) {
             console.log(error, KPPN);
-            console.log(oneLine, LEDGER);
+            // console.log(oneLine, LEDGER);
           }
 
           // try {

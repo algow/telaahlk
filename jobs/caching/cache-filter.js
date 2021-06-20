@@ -1,5 +1,6 @@
 const SingleFilterModel = require('../../models/single-filter');
 const AkrualKasModel = require('../../models/akrualkas');
+const MutasiModel = require('../../models/mutasi');
 const TrieNode = require('./TrieNode');
 const TrieHelper = require('./trie-helpers');
 const redisStorage = require('../../redis/storage');
@@ -55,4 +56,31 @@ exports.akrualkasCache = async () => {
   });
 
   redisStorage.setFilterAkrualKas(akunFilters);
+}
+
+
+exports.mutasiCache = async () => {
+  let mutasi = [];
+
+  try {
+    mutasi = await MutasiModel.find();
+  } catch (error) {
+    console.log(error);
+  }
+
+  let akunFilters = {};
+
+  mutasi.forEach(element => {
+    element.akuns.forEach(akun => {
+
+      // jika akun akrual ada, push kas pada ledger
+      if(akunFilters[akun]) {
+        akunFilters[akun].push(element.ledger);
+      } else {
+        akunFilters[akun] = [element.ledger];
+      }
+    });
+  });
+
+  redisStorage.setFilterMutasi(akunFilters);
 }

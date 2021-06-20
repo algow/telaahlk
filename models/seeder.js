@@ -2,6 +2,9 @@ const PertanyaanModel = require('../models/pertanyaan');
 const JawabanModel = require('../models/jawaban');
 const AkrualKasModel = require('../models/akrualkas');
 const JawabanAkrualkasModel = require('../models/jawaban-akrualkas');
+const MutasiModel = require('../models/mutasi');
+const JawabanMutasiModel = require('../models/jawaban-mutasi');
+const akrualkas = require('../models/akrualkas');
 
 const jawabanSeeder = async (kdkppn, bulan) => {
   let jawabans = [];
@@ -54,33 +57,7 @@ const accrualVsCashSeeder = async (kdkppn, bulan) => {
     console.log(error);
   }
 
-  let data = [];
-  // let akuns = {};
-
-  akrualKas.forEach(element => {
-
-    element.akuns.forEach(akun => {
-      // let perakun = JSON.parse(JSON.stringify(placeholder));
-      let perakun = {};
-
-      perakun['kdkppn'] = kdkppn;
-      perakun['bulan'] = bulan;
-      perakun['kategori'] = element.kategori;
-      perakun['desc'] = element.desc;
-      perakun['ledger'] = element.ledger;
-      perakun['akun'] = akun;
-      perakun['nilai'] = 0;
-
-      data.push(perakun);
-
-      // jika akun akrual ada, push kas pada ledger
-      // if(akuns[akun]) {
-      //   akuns[akun].push(element.ledger);
-      // } else {
-      //   akuns[akun] = [element.ledger];
-      // }
-    });
-  });
+  const data = makeSeedAkrualkas(kdkppn, bulan, akrualKas);
 
   try {
     await JawabanAkrualkasModel.deleteMany({
@@ -91,9 +68,57 @@ const accrualVsCashSeeder = async (kdkppn, bulan) => {
   } catch (error) {
     console.log(error);
   }
-
-  // return akuns;
 }
+
+
+const mutasiAkrualKas = async (kdkppn, bulan) => {
+  let mutasi = [];
+
+  try {
+    mutasi = await MutasiModel.find();
+  } catch (error) {
+    console.log(error);
+  }
+
+  const data = makeSeedAkrualkas(kdkppn, bulan, mutasi);
+
+  try {
+    await JawabanMutasiModel.deleteMany({
+      kdkppn,
+      bulan
+    });
+    await JawabanMutasiModel.insertMany(data);
+  } catch (error) {
+    console.log(error);
+  }
+}
+
 
 exports.jawabanSeeder = jawabanSeeder;
 exports.accrualVsCashSeeder = accrualVsCashSeeder;
+exports.mutasiAkrualKas = mutasiAkrualKas;
+
+
+const makeSeedAkrualkas = (kdkppn, bulan, data) => {
+  let container = [];
+
+  data.forEach(element => {
+
+    element.akuns.forEach(akun => {
+      let perakun = {};
+
+      perakun['kdkppn'] = kdkppn;
+      perakun['bulan'] = bulan;
+      perakun['kategori'] = element.kategori;
+      perakun['desc'] = element.desc;
+      perakun['ledger'] = element.ledger;
+      perakun['akun'] = akun;
+      perakun['nilai'] = 0;
+
+      container.push(perakun);
+    });
+
+  });
+
+  return container;
+}
