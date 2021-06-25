@@ -7,7 +7,7 @@ const { singleFilterCache, akrualkasCache, mutasiCache } = require('./jobs/cachi
 const controllers = require('./controllers/index');
 
 const app = express();
-const port = process.env.PORT || 81;
+const port = process.env.PORT || 4000;
 
 const run = async () => {
   eventInit();
@@ -30,6 +30,7 @@ const run = async () => {
   app.use('/single_filter', controllers.singleFilter);
   app.use('/telaah', controllers.telaah);
   app.use('/download', controllers.download);
+  app.use('/satker', controllers.satker);
 
   app.listen(port, () => console.log(`Using port ${port}`));
 }

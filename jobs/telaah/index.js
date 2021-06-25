@@ -6,11 +6,11 @@ const segmenBank = require('./segmen-bank');
 const telaah = async (input, filters) => {
 
   if(input.ledger === 'Cash_SATKER' || input.ledger === 'Accrual_SATKER') {
-    segmenSatker(input, filters);
+    await segmenSatker(input, filters);
   }
 
   if(input.ledger === 'Cash_BANK') {
-    segmenBank(input, filters);
+    await segmenBank(input, filters);
   }
 
   const akrualKasFilter = await getFilterAkrualKas();

@@ -1,14 +1,18 @@
 const updateJawaban = require('./db-update');
 const UserModel = require('../../models/user');
+const mailQueue = require('../caching/mail-queue');
 
-const segmenSatker = (input, filters) => {
-  filters.forEach(async filter => {
+const segmenSatker = async (input, filters) => {
+  for(const filter of filters) {
     const isInputWajar = await conditions(input, filter);
     
     if(!isInputWajar) {
       await updateJawaban(input, filter, false);
+
+      // Log jawaban anomali di sini
+      // await mailQueue(input);
     }
-  });
+  }
 }
 
 module.exports = segmenSatker;

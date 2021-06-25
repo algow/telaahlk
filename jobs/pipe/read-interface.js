@@ -1,9 +1,9 @@
 const readline = require('readline');
 const fs = require('fs');
 
-const readInterface = queueData => {
+const readInterface = (path, filename) => {
   const read = readline.createInterface({
-    input: fs.createReadStream('./publics/text/' + queueData.filename),
+    input: fs.createReadStream(path + filename),
     console: false
   });
 

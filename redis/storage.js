@@ -5,6 +5,7 @@ const PROCCESS = 'proccess';
 const FILTER = 'filters';
 const AKRUALKAS = 'akrualkas';
 const MUTASI = 'mutasi';
+const MAIL = 'mail';
 
 exports.getQueue = () => {
   return redisClient.lrange(QUEUE, 0, -1).then(res => {
@@ -69,5 +70,23 @@ exports.setFilterMutasi = value => {
 exports.getFilterMutasi = () => {
   return redisClient.get(MUTASI).then(res => {
     return JSON.parse(res);
+  });
+}
+
+exports.getMailQueue = () => {
+  return redisClient.lrange(MAIL, 0, -1).then(res => {
+    return res.map(JSON.parse);
+  });
+}
+
+exports.popMailQueue = () => {
+  return redisClient.lpop(MAIL).then(res => {
+    return JSON.parse(res);
+  });
+}
+
+exports.setMailQueue = queueData => {
+  return redisClient.rpush(MAIL, JSON.stringify(queueData)).then(res => {
+    return res;
   });
 }

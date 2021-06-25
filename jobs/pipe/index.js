@@ -28,7 +28,9 @@ class StreamProcessing {
   }
 
   async run(i=0) {
-    const readLine = readInterface(this.__queue[i]);
+    const readPath = './publics/text/';
+    
+    const readLine = readInterface(readPath, this.__queue[i].filename);
     const writeLine = writeInterface(this.__excelName);
 
     // instantiate TrieNode object here
@@ -39,6 +41,7 @@ class StreamProcessing {
       writeExcelHeader(writeLine);
     }
 
+    // Cek apakah row yang dibaca masuk kategori filter atau tidak?
     readLine.on('line', line => {
       // line string to array
       const oneLineArr = line.split(/\s{2,}/);
